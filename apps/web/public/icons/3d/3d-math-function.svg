@@ -1,0 +1,30 @@
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="r-math-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="65%" stop-color="#000000" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="r-math-curve" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2D6"/>
+      <stop offset="30%" stop-color="#BA8230"/>
+      <stop offset="70%" stop-color="#4B8F8C"/>
+      <stop offset="100%" stop-color="#14463F"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="64" cy="116" rx="42" ry="9" fill="url(#r-math-shadow)"/>
+  <!-- 3D Coordinate Graticule Grid Plate -->
+  <polygon points="64,28 108,52 64,76 20,52" fill="#151B16" stroke="#2B3025" stroke-width="2"/>
+  <line x1="64" y1="28" x2="64" y2="76" stroke="#2B3025" stroke-width="1.5"/>
+  <line x1="20" y1="52" x2="108" y2="52" stroke="#2B3025" stroke-width="1.5"/>
+  <!-- Coordinate Axis Spindles -->
+  <line x1="64" y1="20" x2="64" y2="100" stroke="#8FA396" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="64,14 60,22 68,22" fill="#8FA396"/>
+  <!-- Dimensional Polynomial Curve Tube -->
+  <path d="M24 82C36 82 44 26 64 26C84 26 92 82 104 82" stroke="#0A2823" stroke-width="9" stroke-linecap="round" fill="none"/>
+  <path d="M24 80C36 80 44 24 64 24C84 24 92 80 104 80" stroke="url(#r-math-curve)" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M24 80C36 80 44 24 64 24C84 24 92 80 104 80" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.85"/>
+  <!-- Tangent Extrema Pin -->
+  <circle cx="64" cy="24" r="5" fill="#FFFFFF"/>
+  <circle cx="64" cy="24" r="2.5" fill="#BA8230"/>
+</svg>

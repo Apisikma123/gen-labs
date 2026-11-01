@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <title>Laboratory Codex / Folio</title>
+  <path d="M2 4.5A2.5 2.5 0 0 1 4.5 2H11v18H4.5A2.5 2.5 0 0 0 2 22.5V4.5z" />
+  <path d="M22 4.5A2.5 2.5 0 0 0 19.5 2H13v18h6.5A2.5 2.5 0 0 1 22 22.5V4.5z" />
+  <path d="M6 7h3" />
+  <path d="M6 11h3" />
+  <path d="M15 7h3" />
+  <path d="M15 11h3" />
+</svg>

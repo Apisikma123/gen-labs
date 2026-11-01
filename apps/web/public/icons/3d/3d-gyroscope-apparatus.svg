@@ -1,0 +1,91 @@
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Contact Ground Shadow -->
+    <radialGradient id="r-gyro-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="65%" stop-color="#000000" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Outer Brass Gimbal Ring Gradient -->
+    <linearGradient id="r-gyro-brass-outer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3DC"/>
+      <stop offset="25%" stop-color="#DDA14C"/>
+      <stop offset="60%" stop-color="#BA8230"/>
+      <stop offset="85%" stop-color="#6B4100"/>
+      <stop offset="100%" stop-color="#2D1A00"/>
+    </linearGradient>
+
+    <!-- Inner Gimbal Ring (Sage Chrome) -->
+    <linearGradient id="r-gyro-inner-ring" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E0FAF8"/>
+      <stop offset="35%" stop-color="#4B8F8C"/>
+      <stop offset="70%" stop-color="#1D4838"/>
+      <stop offset="100%" stop-color="#0C241B"/>
+    </linearGradient>
+
+    <!-- Heavy Flywheel Rotor Disk -->
+    <radialGradient id="r-gyro-rotor" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFF8EC"/>
+      <stop offset="30%" stop-color="#E8B868"/>
+      <stop offset="70%" stop-color="#BA8230"/>
+      <stop offset="92%" stop-color="#5E3802"/>
+      <stop offset="100%" stop-color="#321D00"/>
+    </radialGradient>
+
+    <!-- Spindle Shaft (Stainless Steel Polish) -->
+    <linearGradient id="r-gyro-spindle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8FA396"/>
+      <stop offset="35%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#D0DDD4"/>
+      <stop offset="100%" stop-color="#55695C"/>
+    </linearGradient>
+
+    <!-- Angular Momentum Vector Arrow -->
+    <linearGradient id="r-gyro-vector" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C2FAF5"/>
+      <stop offset="100%" stop-color="#4B8F8C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ground Ellipse Shadow -->
+  <ellipse cx="64" cy="116" rx="42" ry="8.5" fill="url(#r-gyro-shadow)"/>
+
+  <!-- Instrument Base Pedestal & Stand -->
+  <path d="M52 110C52 108 56 106 64 106C72 106 76 108 76 110L74 114C74 115 70 116 64 116C58 116 54 115 54 114Z" fill="#1B221E"/>
+  <rect x="62" y="94" width="4" height="13" rx="2" fill="url(#r-gyro-spindle)"/>
+  <path d="M46 96C46 94 82 94 82 96L78 100C78 102 50 102 50 100Z" fill="#2E3832"/>
+
+  <!-- Outer Gimbal Brass Ring (Circular Ring viewed at perspective) -->
+  <ellipse cx="64" cy="58" rx="46" ry="46" stroke="url(#r-gyro-brass-outer)" stroke-width="4.5" fill="none"/>
+
+  <!-- Inner Gimbal Ring (Rotated at 55°) -->
+  <ellipse cx="64" cy="58" rx="38" ry="19" transform="rotate(55 64 58)" stroke="url(#r-gyro-inner-ring)" stroke-width="3.5" fill="none"/>
+
+  <!-- Central Heavy Rotor Flywheel Disc (Tilted at -25°) -->
+  <g transform="rotate(-25 64 58)">
+    <!-- Rotor Lower Rim Thickness -->
+    <ellipse cx="64" cy="62" rx="28" ry="10" fill="#4B2E04"/>
+    <!-- Rotor Main Face -->
+    <ellipse cx="64" cy="58" rx="28" ry="10" fill="url(#r-gyro-rotor)"/>
+    <ellipse cx="64" cy="58" rx="28" ry="10" stroke="#FFF3DC" stroke-width="1.2" stroke-opacity="0.8" fill="none"/>
+    <!-- Inner Concentric Balance Groove -->
+    <ellipse cx="64" cy="58" rx="19" ry="6.5" stroke="#BA8230" stroke-width="1.5" fill="none" opacity="0.7"/>
+    <ellipse cx="64" cy="58" rx="9" ry="3.5" fill="#4B2E04"/>
+  </g>
+
+  <!-- Central Vertical Spindle / Axle Shaft (Passing through Rotor) -->
+  <line x1="64" y1="18" x2="64" y2="98" stroke="url(#r-gyro-spindle)" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Upper & Lower Jeweled Pivot Bearings -->
+  <circle cx="64" cy="18" r="3.5" fill="#BA8230"/>
+  <circle cx="64" cy="18" r="1.5" fill="#FFFFFF"/>
+  <circle cx="64" cy="98" r="3" fill="#BA8230"/>
+
+  <!-- Angular Momentum L-Vector Arrow Indicator -->
+  <path d="M64 22L64 8" stroke="url(#r-gyro-vector)" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="64,4 60,11 68,11" fill="#C2FAF5"/>
+
+  <!-- Spin Velocity Tangent Arc on Rotor -->
+  <path d="M42 45C48 38 72 38 84 46" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 3" opacity="0.85"/>
+  <polygon points="86,48 83,43 88,43" fill="#FFFFFF"/>
+</svg>

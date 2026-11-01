@@ -1,0 +1,45 @@
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="r-dna-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="65%" stop-color="#000000" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="r-dna-strand-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A2E5E1"/>
+      <stop offset="40%" stop-color="#4B8F8C"/>
+      <stop offset="100%" stop-color="#14463F"/>
+    </linearGradient>
+    <linearGradient id="r-dna-strand-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDDB5"/>
+      <stop offset="40%" stop-color="#BA8230"/>
+      <stop offset="100%" stop-color="#5B3900"/>
+    </linearGradient>
+    <radialGradient id="r-dna-node" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#8ED3CF"/>
+      <stop offset="100%" stop-color="#1D4838"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="64" cy="116" rx="38" ry="9" fill="url(#r-dna-shadow)"/>
+  <!-- Helix Base Rungs -->
+  <g stroke-linecap="round" stroke-width="3">
+    <line x1="36" y1="28" x2="92" y2="40" stroke="#BA8230" opacity="0.7"/>
+    <line x1="42" y1="46" x2="86" y2="58" stroke="#4B8F8C" opacity="0.8"/>
+    <line x1="50" y1="64" x2="78" y2="64" stroke="#FFF2D6" opacity="0.9"/>
+    <line x1="42" y1="82" x2="86" y2="70" stroke="#BA8230" opacity="0.8"/>
+    <line x1="36" y1="100" x2="92" y2="88" stroke="#4B8F8C" opacity="0.7"/>
+  </g>
+  <!-- Primary Strand A (Sage Glass) -->
+  <path d="M36 24C48 40 80 44 92 64C80 84 48 88 36 104" stroke="url(#r-dna-strand-1)" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <path d="M36 24C48 40 80 44 92 64C80 84 48 88 36 104" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.75"/>
+  <!-- Primary Strand B (Warm Ochre) -->
+  <path d="M92 24C80 40 48 44 36 64C48 84 80 88 92 104" stroke="url(#r-dna-strand-2)" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <path d="M92 24C80 40 48 44 36 64C48 84 80 88 92 104" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <!-- Sphere Nodes on Intersections -->
+  <circle cx="36" cy="24" r="5.5" fill="url(#r-dna-node)"/>
+  <circle cx="92" cy="24" r="5.5" fill="#FBBA63"/>
+  <circle cx="64" cy="64" r="6.5" fill="#FFFFFF"/>
+  <circle cx="36" cy="104" r="5.5" fill="url(#r-dna-node)"/>
+  <circle cx="92" cy="104" r="5.5" fill="#FBBA63"/>
+</svg>

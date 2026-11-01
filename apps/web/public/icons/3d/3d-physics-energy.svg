@@ -1,0 +1,54 @@
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="r-phys-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="65%" stop-color="#000000" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="r-phys-bulb-body" cx="36%" cy="30%" r="72%">
+      <stop offset="0%" stop-color="#FFF2D6"/>
+      <stop offset="25%" stop-color="#FBBA63"/>
+      <stop offset="65%" stop-color="#BA8230"/>
+      <stop offset="90%" stop-color="#6B4100"/>
+      <stop offset="100%" stop-color="#382000"/>
+    </radialGradient>
+    <radialGradient id="r-phys-core-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#4B8F8C"/>
+      <stop offset="100%" stop-color="#14463F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="r-phys-metal-base" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#422E0E"/>
+      <stop offset="25%" stop-color="#DDA14C"/>
+      <stop offset="50%" stop-color="#FFF3DC"/>
+      <stop offset="75%" stop-color="#BA8230"/>
+      <stop offset="100%" stop-color="#2D1E05"/>
+    </linearGradient>
+    <linearGradient id="r-phys-orbit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#4B8F8C" stop-opacity="0.9"/>
+      <stop offset="80%" stop-color="#1D4838" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#8ED3CF" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="r-phys-specular" x1="20%" y1="10%" x2="50%" y2="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#FFF3DC" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FBBA63" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="64" cy="116" rx="36" ry="8.5" fill="url(#r-phys-shadow)"/>
+  <ellipse cx="64" cy="52" rx="48" ry="17" transform="rotate(-18 64 52)" stroke="url(#r-phys-orbit)" stroke-width="4.5" stroke-dasharray="160 120" stroke-dashoffset="140" fill="none" opacity="0.65"/>
+  <path d="M64 12C43.56 12 27 28.56 27 49C27 61.24 33.14 72.16 42.5 78.78C45.36 80.8 47 84.04 47 87.56V93H81V87.56C81 84.04 82.64 80.8 85.5 78.78C94.86 72.16 101 61.24 101 49C101 28.56 84.44 12 64 12Z" fill="url(#r-phys-bulb-body)"/>
+  <path d="M54 78L58 48C58 44 61 40 64 40C67 40 70 44 70 48L74 78" stroke="#4B8F8C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.85"/>
+  <circle cx="64" cy="40" r="14" fill="url(#r-phys-core-glow)" opacity="0.75"/>
+  <circle cx="64" cy="40" r="3" fill="#FFFFFF"/>
+  <ellipse cx="64" cy="52" rx="48" ry="17" transform="rotate(-18 64 52)" stroke="url(#r-phys-orbit)" stroke-width="5" stroke-dasharray="130 150" fill="none"/>
+  <polygon points="106,34 116,36 109,44" fill="#FFFFFF"/>
+  <rect x="47" y="93" width="34" height="4.5" rx="2.25" fill="url(#r-phys-metal-base)"/>
+  <rect x="48" y="98.5" width="32" height="4.5" rx="2.25" fill="url(#r-phys-metal-base)"/>
+  <rect x="50" y="104" width="28" height="4.5" rx="2.25" fill="url(#r-phys-metal-base)"/>
+  <path d="M54 109C54 109 55 113 64 113C73 113 74 109 74 109Z" fill="#201505"/>
+  <path d="M46 18C52 15.5 60 15 67 16.5C70 17 72 18.5 70.5 20C69 21.5 66.5 21 63 20.5C56 19.5 49 20.5 43 23C41 24 39 23 39.5 21C40 19.5 42.5 18.5 46 18Z" fill="#FFFFFF" opacity="0.95"/>
+  <ellipse cx="40" cy="38" rx="8" ry="18" transform="rotate(-32 40 38)" fill="url(#r-phys-specular)"/>
+  <circle cx="50" cy="27" r="2.5" fill="#FFFFFF"/>
+</svg>

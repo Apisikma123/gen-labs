@@ -1,0 +1,56 @@
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="r-ai-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="r-ai-glass-body" cx="38%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#A2E5E1" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#4B8F8C" stop-opacity="0.85"/>
+      <stop offset="70%" stop-color="#14463F" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#082522" stop-opacity="0.98"/>
+    </radialGradient>
+    <radialGradient id="r-ai-core-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C2FAF5" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#4B8F8C" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0E1410" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="r-ai-specular-main" x1="28%" y1="18%" x2="55%" y2="48%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#E0FAF8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#4B8F8C" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="r-ai-rim-bounce" x1="75%" y1="85%" x2="45%" y2="55%">
+      <stop offset="0%" stop-color="#BA8230" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#4B8F8C" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="r-ai-glass-rim" x1="20%" y1="15%" x2="85%" y2="88%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="30%" stop-color="#8ED3CF" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#1D4838" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#64E5DD" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="64" cy="116" rx="42" ry="9" fill="url(#r-ai-shadow)"/>
+  <path d="M64 16C37.49 16 16 36.6 16 62C16 73.18 20.16 83.43 27.12 91.31C25.68 97.48 22.88 103.54 18.28 108.52C17.48 109.38 18.04 110.74 19.2 110.74C28.44 110.74 36.88 106.84 43.12 101.44C49.44 105.56 56.48 108 64 108C90.51 108 112 87.4 112 62C112 36.6 90.51 16 64 16Z" fill="url(#r-ai-glass-body)"/>
+  <path d="M64 17.5C38.32 17.5 17.5 37.43 17.5 62C17.5 72.84 21.52 82.78 28.25 90.41L29.08 91.35L28.64 92.54C27.38 95.96 25.5 99.47 23 102.77C27.91 101.95 32.74 99.88 36.98 96.65L37.94 95.92L38.99 96.53C46.3 100.8 54.85 103.25 64 103.25C89.68 103.25 110.5 83.32 110.5 62C110.5 37.43 89.68 17.5 64 17.5Z" stroke="url(#r-ai-glass-rim)" stroke-width="2.5" fill="none"/>
+  <path d="M64 16C37.49 16 16 36.6 16 62C16 73.18 20.16 83.43 27.12 91.31C25.68 97.48 22.88 103.54 18.28 108.52C17.48 109.38 18.04 110.74 19.2 110.74C28.44 110.74 36.88 106.84 43.12 101.44C49.44 105.56 56.48 108 64 108C90.51 108 112 87.4 112 62C112 36.6 90.51 16 64 16Z" fill="url(#r-ai-rim-bounce)"/>
+  <g transform="translate(64, 58)">
+    <circle cx="0" cy="0" r="26" fill="url(#r-ai-core-glow)"/>
+    <path d="M0 -18L18 0L0 18L-18 0Z" stroke="#8ED3CF" stroke-width="1.75" stroke-dasharray="3 2" fill="none" opacity="0.8"/>
+    <path d="M0 -12L12 0L0 12L-12 0Z" fill="#2E706B" stroke="#A2E5E1" stroke-width="1.5"/>
+    <path d="M0 -12L12 0L0 0Z" fill="#C2FAF5" opacity="0.6"/>
+    <path d="M0 0L12 0L0 12Z" fill="#14463F" opacity="0.8"/>
+    <circle cx="0" cy="0" r="3.5" fill="#FFFFFF"/>
+    <circle cx="0" cy="0" r="1.5" fill="#4B8F8C"/>
+    <circle cx="-18" cy="0" r="2" fill="#C2FAF5"/>
+    <circle cx="18" cy="0" r="2" fill="#C2FAF5"/>
+    <circle cx="0" cy="-18" r="2" fill="#C2FAF5"/>
+    <circle cx="0" cy="18" r="2" fill="#C2FAF5"/>
+  </g>
+  <path d="M42 24C52 20.5 64 20.5 74 23C78 24 81 26 79 28C77 30 73 29 68 28C58 26.5 48 27.5 39 32C36 33.5 33 32 34 29C35 26.5 38 25 42 24Z" fill="#FFFFFF" opacity="0.85"/>
+  <ellipse cx="36" cy="46" rx="11" ry="20" transform="rotate(-30 36 46)" fill="url(#r-ai-specular-main)"/>
+  <circle cx="48" cy="32" r="2.5" fill="#FFFFFF" opacity="0.95"/>
+</svg>

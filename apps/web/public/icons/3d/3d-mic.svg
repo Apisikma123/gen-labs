@@ -1,0 +1,37 @@
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="r-mic-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="65%" stop-color="#000000" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="r-mic-capsule" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14463F"/>
+      <stop offset="25%" stop-color="#4B8F8C"/>
+      <stop offset="50%" stop-color="#C2FAF5"/>
+      <stop offset="75%" stop-color="#4B8F8C"/>
+      <stop offset="100%" stop-color="#082522"/>
+    </linearGradient>
+    <linearGradient id="r-mic-stand" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#363B2F"/>
+      <stop offset="50%" stop-color="#CAD5CD"/>
+      <stop offset="100%" stop-color="#151B16"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="64" cy="116" rx="34" ry="8" fill="url(#r-mic-shadow)"/>
+  <!-- Microphone Capsule Body -->
+  <rect x="48" y="18" width="32" height="48" rx="16" fill="url(#r-mic-capsule)"/>
+  <!-- Capsule Specular Glint -->
+  <rect x="52" y="24" width="4" height="34" rx="2" fill="#FFFFFF" opacity="0.85"/>
+  <ellipse cx="64" cy="22" rx="10" ry="3" fill="#FFFFFF" opacity="0.9"/>
+  <!-- Mesh Texture Rings -->
+  <line x1="48" y1="36" x2="80" y2="36" stroke="#082522" stroke-width="1.5" opacity="0.7"/>
+  <line x1="48" y1="46" x2="80" y2="46" stroke="#082522" stroke-width="1.5" opacity="0.7"/>
+  <!-- U-Bracket Cradle (3D Wireframe) -->
+  <path d="M40 46C40 68 50 78 64 78C78 78 88 68 88 46" stroke="url(#r-mic-stand)" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <!-- Vertical Stem -->
+  <rect x="61.5" y="78" width="5" height="24" rx="2.5" fill="url(#r-mic-stand)"/>
+  <!-- Base Pedestal -->
+  <ellipse cx="64" cy="104" rx="24" ry="7" fill="url(#r-mic-stand)"/>
+  <ellipse cx="64" cy="102" rx="20" ry="5.5" fill="#4B8F8C" opacity="0.8"/>
+</svg>

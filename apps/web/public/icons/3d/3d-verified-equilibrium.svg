@@ -1,0 +1,49 @@
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="r-ver-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="65%" stop-color="#000000" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="r-ver-shield-body" x1="20%" y1="10%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#3C7F6B"/>
+      <stop offset="35%" stop-color="#1D4838"/>
+      <stop offset="75%" stop-color="#123528"/>
+      <stop offset="100%" stop-color="#081A13"/>
+    </linearGradient>
+    <linearGradient id="r-ver-check-front" x1="25%" y1="15%" x2="75%" y2="85%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#C2FAF5"/>
+      <stop offset="70%" stop-color="#4B8F8C"/>
+      <stop offset="100%" stop-color="#1D554D"/>
+    </linearGradient>
+    <linearGradient id="r-ver-check-depth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14463F"/>
+      <stop offset="50%" stop-color="#0A2823"/>
+      <stop offset="100%" stop-color="#041210"/>
+    </linearGradient>
+    <linearGradient id="r-ver-rim-light" x1="10%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#8ED3CF" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#1D4838" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#A2E5E1" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="r-ver-specular" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#C2FAF5" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="64" cy="116" rx="38" ry="9" fill="url(#r-ver-shadow)"/>
+  <path d="M64 14L102 28C102 64 86 98 64 110C42 98 26 64 26 28L64 14Z" fill="url(#r-ver-shield-body)"/>
+  <path d="M64 16.5L99.5 29.5C99.5 63.5 84.5 95.5 64 107C43.5 95.5 28.5 63.5 28.5 29.5L64 16.5Z" stroke="url(#r-ver-rim-light)" stroke-width="2.5" fill="none"/>
+  <path d="M64 22L92 32C92 60 80 88 64 98C48 88 36 60 36 32L64 22Z" fill="#0D251C" opacity="0.6"/>
+  <path d="M54 78L40 64L48 56L55 63L85 33L93 41L54 80Z" fill="url(#r-ver-check-depth)"/>
+  <g transform="translate(-1, -2)">
+    <path d="M54 78L36 60C34 58 34 54 37 52C40 50 44 50 46 53L54 61L86 29C88 27 92 27 94 29C96 31 96 35 94 37L56 75C55 77 53 78 51 78C52 78 53 78 54 78Z" fill="url(#r-ver-check-front)" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M38 54L46 62L88 30" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.9"/>
+  </g>
+  <path d="M38 24C46 19 55 17 64 16.5C73 17 82 19 90 24" stroke="url(#r-ver-specular)" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <circle cx="34" cy="30" r="2.5" fill="#FFFFFF" opacity="0.95"/>
+  <circle cx="64" cy="18" r="3" fill="#FFFFFF" opacity="0.95"/>
+</svg>

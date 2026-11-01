@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256"><rect width="256" height="256" rx="57.6" fill="#0E1410"/><g transform="translate(16.38 17.26) scale(0.872)" fill="#ffffff">
+  <title id="title-symbol">GEN LABS — Crucible Nexus</title>
+  <!-- Tri-axial Isometric Test Cell: 3 interlocking planar simulation facets -->
+  <polygon points="128,36 204,80 152,110 128,96 104,110 52,80" fill="#ffffff"/>
+  <polygon points="207.69,174 131.69,218 131.69,158 152.48,146 152.48,118 207.69,126" fill="#ffffff"/>
+  <polygon points="48.31,174 48.31,86 103.52,118 103.52,146 124.31,158 124.31,218" fill="#ffffff"/>
+  <!-- Central Reaction Core -->
+  <circle cx="128" cy="128" r="10" fill="#ffffff"/>
+</g></svg>

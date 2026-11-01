@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <title>Scatter Plot Regresi</title>
+  <path d="M3 3v18h18" />
+  <circle cx="7" cy="15" r="1.5" fill="currentColor" />
+  <circle cx="10" cy="11" r="1.5" fill="currentColor" />
+  <circle cx="12" cy="13" r="1.5" fill="currentColor" />
+  <circle cx="16" cy="8" r="1.5" fill="currentColor" />
+  <circle cx="19" cy="6" r="1.5" fill="currentColor" />
+  <line x1="6" y1="16" x2="20" y2="5" stroke-dasharray="2 2" stroke-opacity="0.6" />
+</svg>

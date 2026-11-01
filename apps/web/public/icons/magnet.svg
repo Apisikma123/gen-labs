@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <title>Medan Magnetik Dipol</title>
+  <path d="M5 4v7a7 7 0 0 0 14 0V4" />
+  <line x1="5" y1="9" x2="9" y2="9" />
+  <line x1="15" y1="9" x2="19" y2="9" />
+  <rect x="3" y="4" width="4" height="4" fill="currentColor" fill-opacity="0.25" />
+  <rect x="17" y="4" width="4" height="4" fill="currentColor" fill-opacity="0.25" />
+</svg>

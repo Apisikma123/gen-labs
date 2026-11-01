@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <title>Akuntansi Analitis Dual-Column</title>
+  <rect x="4" y="3" width="16" height="18" rx="2" />
+  <line x1="4" y1="8" x2="20" y2="8" />
+  <line x1="12" y1="8" x2="12" y2="21" />
+  <line x1="6.5" y1="12" x2="9.5" y2="12" />
+  <line x1="14.5" y1="12" x2="17.5" y2="12" />
+  <line x1="6.5" y1="16" x2="9.5" y2="16" />
+  <line x1="14.5" y1="16" x2="17.5" y2="16" />
+</svg>

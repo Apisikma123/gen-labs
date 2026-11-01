@@ -1,0 +1,87 @@
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Contact Ground Shadow -->
+    <radialGradient id="r-prism-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="65%" stop-color="#000000" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Front Left Glass Facet (135° key light illumination) -->
+    <linearGradient id="r-prism-front-left" x1="25%" y1="15%" x2="70%" y2="85%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="25%" stop-color="#C2FAF5" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#4B8F8C" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#14463F" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Front Right Glass Facet (Core shadow & internal refraction) -->
+    <linearGradient id="r-prism-front-right" x1="40%" y1="20%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#8ED3CF" stop-opacity="0.7"/>
+      <stop offset="45%" stop-color="#1D4838" stop-opacity="0.85"/>
+      <stop offset="85%" stop-color="#0E241B" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#081812" stop-opacity="0.98"/>
+    </linearGradient>
+
+    <!-- Top Chamfer Highlight -->
+    <linearGradient id="r-prism-apex-gleam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#C2FAF5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#4B8F8C" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Calibrated Dispersion Beam Spectrum -->
+    <linearGradient id="r-dispersion-spectrum" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="30%" stop-color="#4B8F8C" stop-opacity="0.85"/>
+      <stop offset="65%" stop-color="#3E8E75" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#BA8230" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Incident Beam Gradient -->
+    <linearGradient id="r-incident-beam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ground Ellipse Shadow -->
+  <ellipse cx="64" cy="116" rx="44" ry="9" fill="url(#r-prism-shadow)"/>
+
+  <!-- Incident Collimated Ray (White Key Light Vector entering at 135°) -->
+  <path d="M12 36L44 62" stroke="url(#r-incident-beam)" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+  <circle cx="44" cy="62" r="2.5" fill="#FFFFFF"/>
+
+  <!-- Dispersed Spectral Wave Rays exiting from Right Face -->
+  <!-- Ray 1: Cyan / Sage High Frequency -->
+  <path d="M78 68L116 52" stroke="#4B8F8C" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+  <!-- Ray 2: Phosphor Emerald Mid Frequency -->
+  <path d="M80 72L118 64" stroke="#69E39A" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+  <!-- Ray 3: Warm Ochre Gold Low Frequency -->
+  <path d="M82 76L116 78" stroke="#BA8230" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- Spectral fan glow behind prism -->
+  <polygon points="78,68 116,52 118,64 116,78 82,76" fill="url(#r-dispersion-spectrum)" opacity="0.18"/>
+
+  <!-- Prismatic Crystal Body: Left Illuminated Face -->
+  <polygon points="64,18 26,98 64,106" fill="url(#r-prism-front-left)"/>
+
+  <!-- Prismatic Crystal Body: Right Shaded / Refractive Face -->
+  <polygon points="64,18 64,106 102,94" fill="url(#r-prism-front-right)"/>
+
+  <!-- Internal Refraction Vector Caustic inside the crystal -->
+  <path d="M44 62L64 74L79 70" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 2" fill="none" opacity="0.75"/>
+  <circle cx="64" cy="74" r="2" fill="#C2FAF5" opacity="0.9"/>
+
+  <!-- Outer Crystal Bevel Hairlines -->
+  <polygon points="64,18 26,98 64,106" stroke="#C2FAF5" stroke-width="1.25" stroke-opacity="0.4" fill="none"/>
+  <polygon points="64,18 64,106 102,94" stroke="#64E5DD" stroke-width="1.25" stroke-opacity="0.3" fill="none"/>
+
+  <!-- Central Sharp Ridge Bevel (Vertical Pinnacle Axis) -->
+  <line x1="64" y1="18" x2="64" y2="106" stroke="url(#r-prism-apex-gleam)" stroke-width="2"/>
+
+  <!-- Left Studio Softbox Specular Highlight (Parallel to Left Ridge) -->
+  <path d="M60 26L34 88" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="64" cy="18" r="3" fill="#FFFFFF"/>
+</svg>

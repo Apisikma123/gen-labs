@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <title>Gerak Parabola Kinematik</title>
+  <line x1="3" y1="20" x2="21" y2="20" />
+  <path d="M4 20c2-12 11-15 16-1" stroke-dasharray="2 2" />
+  <circle cx="12" cy="7" r="2" fill="#BA8230" stroke="#BA8230" />
+  <path d="M12 7l4-2" />
+  <polyline points="14 4 16 5 15 7" />
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <title>Socratic Hypothesis Network</title>
+  <path d="M9.5 3A4.5 4.5 0 0 0 5 7.5c0 .76.19 1.48.52 2.11A5 5 0 0 0 4 14a5 5 0 0 0 3 4.58V20a1 1 0 0 0 1 1h2" />
+  <path d="M14.5 3A4.5 4.5 0 0 1 19 7.5c0 .76-.19 1.48-.52 2.11A5 5 0 0 1 20 14a5 5 0 0 1-3 4.58V20a1 1 0 0 1-1 1h-2" />
+  <line x1="12" y1="4" x2="12" y2="21" />
+  <circle cx="12" cy="8" r="1.5" fill="#4B8F8C" stroke="#4B8F8C" />
+  <circle cx="12" cy="14" r="1.5" fill="#4B8F8C" stroke="#4B8F8C" />
+</svg>

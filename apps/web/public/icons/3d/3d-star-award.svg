@@ -1,0 +1,30 @@
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="r-star-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="65%" stop-color="#000000" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="r-star-outer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5DE"/>
+      <stop offset="25%" stop-color="#DDA14C"/>
+      <stop offset="60%" stop-color="#BA8230"/>
+      <stop offset="100%" stop-color="#462B00"/>
+    </linearGradient>
+    <radialGradient id="r-star-inner" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFDF8"/>
+      <stop offset="40%" stop-color="#FFDDB5"/>
+      <stop offset="85%" stop-color="#DDA14C"/>
+      <stop offset="100%" stop-color="#8C5800"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="64" cy="116" rx="40" ry="8.5" fill="url(#r-star-shadow)"/>
+  <!-- Outer Raised Golden Star Rim -->
+  <path d="M64 12L78 44L112 48L86 72L94 106L64 88L34 106L42 72L16 48L50 44L64 12Z" fill="url(#r-star-outer)" stroke="#FFF5DE" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Recessed Inner Facet -->
+  <path d="M64 24L74 48L100 52L80 70L86 96L64 82L42 96L48 70L28 52L54 48L64 24Z" fill="url(#r-star-inner)" stroke="#BA8230" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Specular Hotspot on Top Tip -->
+  <circle cx="64" cy="14" r="3" fill="#FFFFFF"/>
+  <circle cx="112" cy="48" r="2.5" fill="#FFFFFF"/>
+  <circle cx="16" cy="48" r="2.5" fill="#FFFFFF"/>
+</svg>

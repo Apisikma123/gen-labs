@@ -1,0 +1,662 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(:root, [data-theme="dark"], [data-theme="dark"] *, .dark, .dark *));
+
+@theme {
+  --font-heading: var(--font-sora), 'Sora', sans-serif;
+  --font-sans: var(--font-outfit), 'Outfit', sans-serif;
+  --font-mono: var(--font-space-mono), 'Space Mono', monospace;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+  --radius-3xl: 28px;
+}
+
+/* Default Global Blue Selection */
+::selection {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+:root,
+html,
+body,
+[data-theme="dark"],
+.dark {
+  color-scheme: dark;
+  font-family: var(--font-sans), 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  /* Level 0: Neutral Obsidian Charcoal Base Ground (Precision Laboratory Canvas) */
+  --color-bg: #0C0E12;
+
+  /* Level 1: Elevated Panels & Cards (Neutral Graphite Layers - Zero Swamp Green Cast) */
+  --color-surface: #14171E;
+  --color-surface-subtle: #0F1217;
+  --color-surface-elevated: #1B202A;
+
+  /* Level 2: Floating Glass */
+  --color-glass: rgba(20, 23, 30, 0.94);
+  --color-glass-border: rgba(62, 142, 117, 0.15);
+
+  /* High-Contrast Soft White Typography (WCAG AAA >= 7:1 against #0C0E12) */
+  --color-text: #F1F5F9;
+  --color-text-primary: #F1F5F9;
+  --color-text-secondary: #94A3B8;
+  --color-text-tertiary: #8092A8;
+  --color-text-muted: #8092A8;
+
+  /* Quiet Neutral Hairline Borders (WCAG Non-text >= 3:1 against #0C0E12) */
+  --color-border: #222733;
+  --color-border-subtle: #191D26;
+  --color-border-strong: #2F3646;
+
+  /* Primary Deep Structural Sage/Pine (for filled actions & badges) */
+  --color-primary: #1C332A;
+  --color-primary-hover: #234337;
+  --color-primary-soft: rgba(62, 142, 117, 0.12);
+
+  /* Accessible Desaturated Laboratory Sage Accent (Text, Icons, Focus Rings) */
+  --color-primary-accent: #3E8E75;
+  --color-primary-text: #4EAA8F;
+  --color-interactive: #3E8E75;
+  --color-interactive-hover: #4EAA8F;
+
+  /* Secondary Phosphor Sage Cyan Telemetry */
+  --color-secondary: #4B8F8C;
+  --color-secondary-hover: #5FA8A5;
+  --color-secondary-soft: rgba(75, 143, 140, 0.12);
+  --color-secondary-text: #5FA8A5;
+
+  /* Warm Radiant Ochre / Amber Accent (Golden Energy / Mechanics) */
+  --color-accent: #BA8230;
+  --color-accent-hover: #CD9239;
+  --color-accent-soft: rgba(186, 130, 48, 0.14);
+
+  /* Accessible Focus Ring (WCAG 2.1 AA 2.4.7) */
+  --color-focus-ring: #3E8E75;
+
+  /* ── ZONE 2: DARK LABORATORY APPARATUS CANVAS ── */
+  --color-canvas: #0C0E12;
+  --color-canvas-grid: #161A22;
+  --color-canvas-axis: #222733;
+  --color-canvas-ground: #101319;
+  --color-canvas-object: #14171E;
+  --color-canvas-seam: #222733;
+  --color-canvas-header: #14171E;
+  --color-canvas-text: #F1F5F9;
+  --color-canvas-text-muted: #94A3B8;
+  --color-success: #3E8E75;
+  --color-error: #F87171;
+
+  --color-lab-canvas-ground: #0C0E12;
+  --color-lab-canvas-grid: #161A22;
+  --color-lab-canvas-axis: #222733;
+  --color-lab-rack-bg: #14171E;
+  --color-lab-rack-border: #222733;
+  --color-lab-telemetry-text: #F1F5F9;
+  --color-lab-telemetry-muted: #94A3B8;
+  --color-lab-telemetry-cyan: #4B8F8C;
+
+  --color-brand: var(--color-primary);
+  --color-telemetry: var(--color-secondary);
+  --color-telemetry-bright: #4B8F8C;
+  --color-surface-1: var(--color-surface);
+  --color-surface-2: var(--color-surface-subtle);
+  --color-text-primary: var(--color-text);
+
+  /* Consistent Radius Hierarchy (PRD v2.0 Global Scale) */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+  --radius-3xl: 28px;
+  --radius-full: 9999px;
+  --radius-pill: 9999px;
+
+  /* Semantic Component Mappings */
+  --radius-btn: 12px;
+  --radius-input: 12px;
+  --radius-card: 16px;
+  --radius-sim: 16px;
+  --radius-modal: 20px;
+  --radius-surface: 16px;
+  --radius-dock: 16px;
+
+  /* Restrained Elevation */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 2px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 6px 20px -3px rgba(0, 0, 0, 0.5);
+  --shadow-floating: 0 12px 32px -4px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.08);
+
+  /* Typography */
+  --font-heading: var(--font-sora), 'Sora', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-sans: var(--font-outfit), 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-space-mono), 'Space Mono', monospace;
+}
+
+/* ── Base Setup & Standard Cursor System ───────────── */
+*, *::before, *::after {
+  cursor: default;
+}
+
+html {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: default;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  cursor: default;
+}
+
+
+/* ── Universal Input & Interactive Reset ──────────── */
+/* Reset native OS form control appearance */
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Suppress distracting browser focus halos during pointer/mouse clicks */
+:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible),
+select:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Accessible focus ring for keyboard navigation (WCAG 2.1 AA 2.4.7 Focus Visible) */
+:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+/* Form inputs & textareas manage their own border/ring; suppress jarring rectangular halos */
+input:focus,
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible,
+select:focus,
+select:focus-visible,
+.outline-none,
+.no-outline {
+  outline: none;
+}
+
+
+/* ── Accessible Status Badges & Pill System ────────── */
+.badge-green,
+.badge-primary {
+  background-color: #152B1E;
+  border: 1px solid #2D4C38;
+  color: var(--color-primary-accent);
+}
+
+.badge-teal,
+.badge-secondary {
+  background-color: #122B2A;
+  border: 1px solid #244C4B;
+  color: var(--color-secondary);
+}
+
+.badge-amber,
+.badge-accent {
+  background-color: #2B2313;
+  border: 1px solid #4C3D21;
+  color: var(--color-accent);
+}
+
+/* ── Global Contrast Guard ───────────────────────── */
+/* In dark mode, text referencing --color-primary must resolve to accessible phosphor green */
+.text-primary-accent,
+[class*="text-[var(--color-primary)]"] {
+  color: var(--color-primary-accent) !important;
+}
+
+/* Ensure hover states resolve to high-contrast interactive green */
+[class*="hover:text-[var(--color-primary)]"]:hover,
+[class*="group-hover:text-[var(--color-primary)]"]:hover,
+.group:hover [class*="group-hover:text-[var(--color-primary)]"] {
+  color: var(--color-primary-accent) !important;
+}
+
+[class*="hover:text-[var(--color-primary-hover)]"]:hover,
+[class*="group-hover:text-[var(--color-primary-hover)]"]:hover,
+.group:hover [class*="group-hover:text-[var(--color-primary-hover)]"] {
+  color: var(--color-interactive) !important;
+}
+
+/* Explicit Interactive Targets */
+a,
+button,
+[role="button"],
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+input[type="checkbox"],
+input[type="radio"],
+select,
+summary {
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+textarea {
+  cursor: text;
+}
+
+[disabled],
+:disabled {
+  cursor: not-allowed !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* ── Surface Hierarchy System ─────────────────────── */
+
+/* Level 1: Solid Curved Instrument Card */
+.spatial-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-xs);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.spatial-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Level 2: Floating Curved Glass Dock */
+.floating-glass,
+.spatial-glass {
+  background: var(--color-glass);
+  backdrop-filter: blur(14px) saturate(170%);
+  -webkit-backdrop-filter: blur(14px) saturate(170%);
+  border: 1px solid var(--color-glass-border);
+  box-shadow: var(--shadow-floating);
+  border-radius: var(--radius-dock);
+}
+
+/* Dedicated Simulation Workspace Viewport (Calibrated Solid Ground - DESIGN (4).md) */
+.spatial-canvas-viewport {
+  background-color: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sim);
+  overflow: hidden;
+  box-shadow: none; /* Eliminated ambient drop shadows per DESIGN (4).md */
+  position: relative;
+  touch-action: pan-y;
+}
+
+/* Zone 2 Laboratory Stage Scoping: SVG apparatus & vectors render according to theme tokens */
+.spatial-canvas-viewport svg {
+  --color-text: var(--color-canvas-text);
+  --color-text-secondary: var(--color-canvas-text-muted);
+  --color-surface: var(--color-canvas-ground);
+  --color-surface-subtle: var(--color-canvas-object);
+  --color-border: var(--color-canvas-seam);
+}
+
+@media (max-width: 640px) {
+  .spatial-canvas-viewport {
+    background-size: 25px 25px;
+    border-radius: 8px;
+  }
+}
+
+/* ── Tactile Slider with generous tap target ─────── */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: var(--color-border);
+  border-radius: 9999px;
+  outline: none;
+  transition: background 0.15s ease;
+  cursor: pointer;
+  margin: 8px 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  border: 2px solid var(--color-surface);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  background: var(--color-primary);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  border: 2px solid var(--color-surface);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* ── Hide scrollbar utility ───────────────────────── */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ── Custom Dark Scrollbar Utility ─────────────────── */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #273A2D;
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #3B5A45;
+}
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #273A2D transparent;
+}
+
+/* ── Reduced Motion Accessibility ─────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Global Spatial Containers & Layout System ────── */
+.container-reading {
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-page {
+  width: 100%;
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-sim {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive Horizontal Breathing Room */
+.px-responsive {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 640px) {
+  .px-responsive {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .px-responsive {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .px-responsive {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+/* Standardized Radius Classes */
+.radius-btn {
+  border-radius: var(--radius-btn);
+}
+.radius-input {
+  border-radius: var(--radius-input);
+}
+.radius-card {
+  border-radius: var(--radius-card);
+}
+.radius-sim {
+  border-radius: var(--radius-sim);
+}
+.radius-modal {
+  border-radius: var(--radius-modal);
+}
+.radius-surface {
+  border-radius: var(--radius-surface);
+}
+
+/* Section vertical breathing room (32-48px) */
+.section-gap {
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .section-gap {
+    margin-bottom: 3rem;
+  }
+}
+
+/* ── WebAngles-Inspired Section Rhythm & Transitions ── */
+
+/* Generous editorial section padding (WebAngles uses 80-160px vertical) */
+.section-editorial {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .section-editorial {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section-editorial {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+}
+
+/* Card hover lift: subtle translate + border accent */
+.card-lift {
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 0.2s ease,
+              box-shadow 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.card-lift:hover {
+  transform: translateY(-3px);
+}
+
+/* ── Tactical 3D Icon Micro-interactions ── */
+.icon-3d-interactive {
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), filter 0.24s ease;
+  will-change: transform;
+}
+.icon-3d-interactive:hover {
+  transform: translateY(-2px) scale(1.04);
+}
+.icon-3d-interactive:active {
+  transform: translateY(0px) scale(0.97);
+}
+@media (prefers-reduced-motion: reduce) {
+  .icon-3d-interactive,
+  .card-lift {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+/* Directory row hover: WebAngles-style inset glow */
+.row-hover-glow {
+  transition: background 0.18s ease, box-shadow 0.18s ease;
+}
+.row-hover-glow:hover {
+  box-shadow: inset 3px 0 0 0 var(--color-secondary);
+}
+
+/* Sleek Minimalist Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-secondary);
+}
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
+
+/* ── Global Subtle Dark Scrollbar System ── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #27382E;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3B5445;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #27382E transparent;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ── Hardware-Accelerated Anime.js Kinetic Core Animations (60 FPS Mobile) ── */
+@keyframes animejs-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes animejs-spin-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+.animate-animejs-spin {
+  animation: animejs-spin 36s linear infinite;
+  will-change: transform;
+  transform-origin: center;
+}
+
+.animate-animejs-spin-slow {
+  animation: animejs-spin 60s linear infinite;
+  will-change: transform;
+  transform-origin: center;
+}
+
+.animate-animejs-spin-reverse {
+  animation: animejs-spin-reverse 45s linear infinite;
+  will-change: transform;
+  transform-origin: center;
+}
+
+@keyframes ticker-slide {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-ticker-continuous {
+  animation: ticker-slide 32s linear infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ticker-continuous {
+    animation: none;
+  }
+}
+
+.section-lazy-render {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}

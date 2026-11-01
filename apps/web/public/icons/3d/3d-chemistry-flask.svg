@@ -1,0 +1,60 @@
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="r-chem-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="65%" stop-color="#000000" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="r-chem-glass-body" x1="15%" y1="15%" x2="85%" y2="85%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="35%" stop-color="#8ED3CF" stop-opacity="0.15"/>
+      <stop offset="70%" stop-color="#1D4838" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0E1410" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="r-chem-liquid-body" x1="50%" y1="52%" x2="50%" y2="108%">
+      <stop offset="0%" stop-color="#8ED3CF"/>
+      <stop offset="30%" stop-color="#4B8F8C"/>
+      <stop offset="75%" stop-color="#1D4838"/>
+      <stop offset="100%" stop-color="#0C241B"/>
+    </linearGradient>
+    <linearGradient id="r-chem-meniscus" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C2FAF5"/>
+      <stop offset="50%" stop-color="#8ED3CF"/>
+      <stop offset="100%" stop-color="#4B8F8C"/>
+    </linearGradient>
+    <linearGradient id="r-chem-specular-edge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#C2FAF5" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#4B8F8C" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="r-chem-gold-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3DC"/>
+      <stop offset="50%" stop-color="#BA8230"/>
+      <stop offset="100%" stop-color="#5B3900"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="64" cy="116" rx="40" ry="9" fill="url(#r-chem-shadow)"/>
+  <path d="M54 18H74V48L104 98C106.5 102 103.5 108 98 108H30C24.5 108 21.5 102 24 98L54 48V18Z" fill="url(#r-chem-glass-body)"/>
+  <path d="M38.5 74H89.5L98 98C100 101.5 98 106 94 106H34C30 106 28 101.5 30 98L38.5 74Z" fill="url(#r-chem-liquid-body)"/>
+  <ellipse cx="64" cy="74" rx="25.5" ry="5.5" fill="url(#r-chem-meniscus)"/>
+  <circle cx="56" cy="94" r="3.5" fill="#C2FAF5" opacity="0.8"/>
+  <circle cx="55" cy="93" r="1.2" fill="#FFFFFF"/>
+  <circle cx="72" cy="86" r="2.5" fill="#C2FAF5" opacity="0.7"/>
+  <circle cx="62" cy="82" r="1.8" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="78" cy="98" r="4.5" fill="#8ED3CF" opacity="0.6"/>
+  <line x1="48" y1="88" x2="55" y2="88" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="51" y1="78" x2="57" y2="78" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="53" y1="68" x2="58" y2="68" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M54 18H74V48L104 98C106.5 102 103.5 108 98 108H30C24.5 108 21.5 102 24 98L54 48V18Z" stroke="#8ED3CF" stroke-width="2" stroke-linejoin="round" fill="none" opacity="0.7"/>
+  <rect x="50" y="14" width="28" height="5" rx="2.5" fill="#C2FAF5" stroke="#FFFFFF" stroke-width="1.5"/>
+  <ellipse cx="64" cy="16.5" rx="11" ry="2" fill="#14463F"/>
+  <path d="M52 22L28 96C27 99 28.5 102 32 102L34 100L56 24V22H52Z" fill="url(#r-chem-specular-edge)"/>
+  <path d="M55 24H58V46L62 52L58 54L55 48V24Z" fill="#FFFFFF" opacity="0.7"/>
+  <g transform="translate(94, 38)">
+    <polygon points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="none" stroke="url(#r-chem-gold-ring)" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="4.5" fill="url(#r-chem-gold-ring)"/>
+    <circle cx="0" cy="-14" r="2.5" fill="#FFE2B3"/>
+    <circle cx="12" cy="7" r="2.5" fill="#FFE2B3"/>
+    <circle cx="-12" cy="7" r="2.5" fill="#FFE2B3"/>
+  </g>
+</svg>

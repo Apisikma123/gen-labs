@@ -1,0 +1,37 @@
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="r-lock-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.5"/>
+      <stop offset="65%" stop-color="#000000" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="r-lock-body" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4B8F8C"/>
+      <stop offset="35%" stop-color="#1D4838"/>
+      <stop offset="80%" stop-color="#14382A"/>
+      <stop offset="100%" stop-color="#081A13"/>
+    </linearGradient>
+    <linearGradient id="r-lock-shackle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#363B2F"/>
+      <stop offset="25%" stop-color="#CAD5CD"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="75%" stop-color="#8FA396"/>
+      <stop offset="100%" stop-color="#151B16"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="64" cy="116" rx="38" ry="9" fill="url(#r-lock-shadow)"/>
+  <!-- Metallic Shackle U-Bar -->
+  <path d="M42 56V34C42 22 52 14 64 14C76 14 86 22 86 34V56" stroke="url(#r-lock-shackle)" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <!-- Shackle Specular Glint -->
+  <path d="M42 34C42 24 50 18 64 18" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.9"/>
+  <!-- Chunky Enameled Lock Body -->
+  <rect x="28" y="52" width="72" height="56" rx="18" fill="url(#r-lock-body)"/>
+  <!-- Lock Body Bevel Rim -->
+  <rect x="29" y="53" width="70" height="54" rx="17" stroke="#A2E5E1" stroke-width="2" fill="none" opacity="0.6"/>
+  <!-- Keyhole Slot -->
+  <circle cx="64" cy="74" r="6" fill="#081A13"/>
+  <polygon points="61,74 67,74 68,88 60,88" fill="#081A13"/>
+  <!-- Primary Specular Softbox Highlight -->
+  <path d="M38 58C46 55 54 55 62 55" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <rect x="34" y="66" width="3" height="34" rx="1.5" fill="#FFFFFF" opacity="0.8"/>
+</svg>

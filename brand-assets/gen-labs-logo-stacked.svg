@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384" width="384" height="384" role="img" aria-labelledby="title-lockup-stacked">
+  <title id="title-lockup-stacked">GEN LABS — Stacked Logo</title>
+  <!-- Crucible Nexus Symbol Centered -->
+  <g transform="translate(64, 16)">
+    <polygon points="128,36 204,80 152,110 128,96 104,110 52,80" fill="#10150B"/>
+    <polygon points="207.69,174 131.69,218 131.69,158 152.48,146 152.48,118 207.69,126" fill="#10150B"/>
+    <polygon points="48.31,174 48.31,86 103.52,118 103.52,146 124.31,158 124.31,218" fill="#10150B"/>
+    <circle cx="128" cy="128" r="10" fill="#4B8F8C"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="192" y="306" text-anchor="middle" font-family="'Sora', -apple-system, BlinkMacSystemFont, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.8" fill="#10150B">GEN<tspan fill="#4B8F8C">·</tspan>LABS</text>
+  <text x="192" y="336" text-anchor="middle" font-family="'Space Mono', monospace" font-size="11" font-weight="700" letter-spacing="2.5" fill="#5A6658">UNIVERSAL SIMULATION PLATFORM</text>
+</svg>

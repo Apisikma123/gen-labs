@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <title>Osilasi Pendulum Harmonik</title>
+  <line x1="4" y1="3" x2="20" y2="3" />
+  <line x1="12" y1="3" x2="17" y2="15" />
+  <circle cx="17" cy="17" r="3" fill="currentColor" fill-opacity="0.2" />
+  <path d="M8 18c2 2 6 2 8 0" stroke-dasharray="1.5 1.5" stroke-opacity="0.6" />
+</svg>

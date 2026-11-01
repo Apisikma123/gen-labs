@@ -1,0 +1,41 @@
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="r-book-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="65%" stop-color="#000000" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="r-book-cover" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D5A4C"/>
+      <stop offset="40%" stop-color="#1D4838"/>
+      <stop offset="100%" stop-color="#0E241B"/>
+    </linearGradient>
+    <linearGradient id="r-book-pages" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#E6ECE8"/>
+      <stop offset="80%" stop-color="#CAD5CD"/>
+      <stop offset="100%" stop-color="#8FA396"/>
+    </linearGradient>
+    <linearGradient id="r-book-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3DC"/>
+      <stop offset="50%" stop-color="#BA8230"/>
+      <stop offset="100%" stop-color="#5B3900"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="64" cy="116" rx="44" ry="9" fill="url(#r-book-shadow)"/>
+  <!-- Book Back Cover -->
+  <path d="M22 84L64 98L106 84L106 88L64 102L22 88Z" fill="#0C1D16"/>
+  <!-- Paper Edge Block (Stepped Layer Volume) -->
+  <path d="M24 40L64 54L104 40V80L64 94L24 80Z" fill="url(#r-book-pages)"/>
+  <path d="M24 80L64 94L104 80L104 84L64 98L24 84Z" fill="#CAD5CD"/>
+  <!-- Top Open Pages -->
+  <path d="M24 40C40 44 54 48 64 54C74 48 88 44 104 40L100 36C86 40 72 44 64 48C56 44 42 40 28 36Z" fill="#FFFFFF"/>
+  <!-- Left Page Leaf -->
+  <path d="M26 38C40 42 52 46 63 52V88C52 82 40 78 26 74Z" fill="#FFFFFF"/>
+  <!-- Right Page Leaf -->
+  <path d="M65 52C76 46 88 42 102 38V74C88 78 76 82 65 88Z" fill="#F4F7F5"/>
+  <!-- Center Gold Bookmark Ribbon -->
+  <path d="M62 48V106L66 102L70 106V48Z" fill="url(#r-book-gold)"/>
+  <!-- Golden Nexus Emblem on Cover -->
+  <polygon points="64,20 72,25 64,30 56,25" fill="url(#r-book-gold)"/>
+</svg>

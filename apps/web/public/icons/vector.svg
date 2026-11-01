@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <title>Vektor Koordinat</title>
+  <line x1="4" y1="20" x2="19" y2="5" />
+  <polyline points="12 5 19 5 19 12" />
+  <line x1="4" y1="20" x2="19" y2="20" stroke-dasharray="2 2" stroke-opacity="0.6" />
+  <line x1="19" y1="20" x2="19" y2="5" stroke-dasharray="2 2" stroke-opacity="0.6" />
+  <circle cx="4" cy="20" r="1.5" fill="currentColor" />
+</svg>

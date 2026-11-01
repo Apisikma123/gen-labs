@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+vendor/
+.pnp
+.pnp.*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Next.js & Build outputs
+.next/
+dist/
+build/
+out/
+.vercel/
+.turbo/
+*.tsbuildinfo
+
+# Testing & Logs
+coverage/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.phpunit.result.cache
+.phpunit.cache/
+
+# Laravel & PHP
+/api/storage/*.key
+/api/storage/pail
+/api/storage/framework/sessions/*
+!/api/storage/framework/sessions/.gitignore
+/api/storage/framework/views/*
+!/api/storage/framework/views/.gitignore
+/api/storage/logs/*.log
+/api/public/storage
+/api/public/hot
+/api/public/build
+_ide_helper.php
+Homestead.json
+Homestead.yaml
+
+# Database & SQLite
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# Archives & Temporary files
+*.zip
+*.tar.gz
+scratch/
+benchmark-tokens.json
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

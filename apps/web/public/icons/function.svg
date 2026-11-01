@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <title>Kurva Fungsi f(x)</title>
+  <line x1="4" y1="20" x2="20" y2="20" />
+  <line x1="4" y1="20" x2="4" y2="4" />
+  <path d="M4 17c5-1 7-10 11-10 3 0 4 4 5 7" />
+  <circle cx="15" cy="7" r="1.5" fill="currentColor" />
+</svg>

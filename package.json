@@ -1,0 +1,19 @@
+{
+  "name": "genlabs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GEN LABS — Virtual Science & Computational Platform",
+  "scripts": {
+    "dev": "node dev.js",
+    "dev:web": "npm --prefix apps/web run dev",
+    "dev:api": "cd api && php artisan serve --host=127.0.0.1 --port=8000",
+    "build": "npm --prefix apps/web run build",
+    "clean": "node -e \"const fs = require('fs'); ['apps/web/.next'].forEach(p => { if (fs.existsSync(p)) fs.rmSync(p, { recursive: true, force: true }); }); console.log('Build cache successfully cleared!');\"",
+    "test:web": "npm --prefix apps/web test",
+    "test:api": "cd api && php artisan test"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}

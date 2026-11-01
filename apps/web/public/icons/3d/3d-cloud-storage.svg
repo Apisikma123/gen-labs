@@ -1,0 +1,23 @@
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="r-cloud-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.4"/>
+      <stop offset="65%" stop-color="#000000" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="r-cloud-body" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#E6ECE8"/>
+      <stop offset="85%" stop-color="#CAD5CD"/>
+      <stop offset="100%" stop-color="#8FA396"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="64" cy="116" rx="42" ry="8.5" fill="url(#r-cloud-shadow)"/>
+  <!-- Pillowy Smooth 3D Cloud Lobe Volume -->
+  <path d="M42 98H90C103 98 114 88 114 75C114 63 105 53 94 52C92 34 77 20 58 20C42 20 28 32 26 48C14 50 6 60 6 72C6 86 18 98 32 98H42Z" fill="url(#r-cloud-body)"/>
+  <!-- Upper Lobes Studio Highlight -->
+  <path d="M48 24C52 22 56 22 62 23" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M84 54C88 53 94 54 98 56" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Underside Cool Ambient Occlusion -->
+  <path d="M28 92C48 95 80 95 98 92" stroke="#8FA396" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+</svg>

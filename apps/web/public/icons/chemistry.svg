@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <title>Kimia Terapan (Meniscus & Solute)</title>
+  <path d="M9 3h6" />
+  <path d="M10 3v5l-4.5 9.5A2 2 0 0 0 7.3 21h9.4a2 2 0 0 0 1.8-3.5L14 8V3" />
+  <path d="M7 16c2.5 1 7.5 1 10 0" />
+  <circle cx="10" cy="18" r="0.75" fill="currentColor" />
+  <circle cx="14" cy="17" r="0.75" fill="currentColor" />
+</svg>

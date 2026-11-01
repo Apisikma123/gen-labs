@@ -1,0 +1,5781 @@
+{
+  "templates": {
+    "newtons-second-law": {
+      "id": "tpl-newtons-second-law",
+      "slug": "newtons-second-law",
+      "title": "Newton's Second Law Dynamics",
+      "domain": "Physics",
+      "engine": "physics",
+      "prompt": "Hukum Newton II dinamika",
+      "definition": {
+        "engine": "physics",
+        "simulation": "newtons_second_law",
+        "version": 1,
+        "title": "Newton's Second Law Dynamics",
+        "description": "Kinetic vector model calculating linear acceleration from net force and mass.",
+        "domain": "Physics",
+        "concepts": [
+          "force",
+          "mass",
+          "acceleration",
+          "F=ma",
+          "friction"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 5,
+            "min": 0.5,
+            "max": 20,
+            "step": 0.5,
+            "unit": "kg",
+            "label": "Object Mass"
+          },
+          "force": {
+            "value": 25,
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "N",
+            "label": "Applied Force"
+          },
+          "friction": {
+            "value": 0.1,
+            "min": 0,
+            "max": 0.5,
+            "step": 0.01,
+            "unit": "μ",
+            "label": "Surface Friction"
+          }
+        },
+        "controls": [
+          "mass",
+          "force",
+          "friction"
+        ]
+      },
+      "status": "published",
+      "version": 224,
+      "usageCount": 353,
+      "createdAt": "2026-10-03T00:00:00.000Z"
+    },
+    "linear-regression": {
+      "id": "tpl-linear-regression",
+      "slug": "linear-regression",
+      "title": "Regresi Linear: Ordinary Least Squares",
+      "domain": "Statistics",
+      "engine": "statistics",
+      "prompt": "Aku mau ngerti regresi linear.",
+      "definition": {
+        "engine": "statistics",
+        "simulation": "linear_regression",
+        "version": 1,
+        "title": "Regresi Linear: Ordinary Least Squares",
+        "description": "Eksperimen sebaran data 2D untuk mengamati bagaimana garis OLS meminimalkan total kuadrat residual dan mengukur R².",
+        "domain": "Statistics",
+        "concepts": [
+          "regression",
+          "linear",
+          "ols",
+          "least squares",
+          "regresi",
+          "korelasi",
+          "r-squared"
+        ],
+        "parameters": {
+          "trueSlope": {
+            "value": 1.8,
+            "min": -5,
+            "max": 5,
+            "step": 0.1,
+            "label": "Kemiringan Sejati"
+          },
+          "trueIntercept": {
+            "value": 5,
+            "min": -10,
+            "max": 10,
+            "step": 0.5,
+            "label": "Titik Potong"
+          },
+          "noise": {
+            "value": 4,
+            "min": 0,
+            "max": 15,
+            "step": 0.5,
+            "label": "Variansi Noise"
+          },
+          "sampleSize": {
+            "value": 25,
+            "min": 10,
+            "max": 60,
+            "step": 5,
+            "unit": "titik",
+            "label": "Jumlah Sampel"
+          }
+        },
+        "controls": [
+          "trueSlope",
+          "trueIntercept",
+          "noise",
+          "sampleSize"
+        ]
+      },
+      "status": "active",
+      "version": 1,
+      "createdAt": "2026-10-03T00:00:00.000Z"
+    },
+    "supply-demand": {
+      "id": "tpl-supply-demand",
+      "slug": "supply-demand",
+      "title": "Keseimbangan Pasar: Permintaan & Penawaran",
+      "domain": "Economics",
+      "engine": "economics",
+      "prompt": "Kenapa harga memengaruhi permintaan?",
+      "definition": {
+        "engine": "economics",
+        "simulation": "supply_demand",
+        "version": 1,
+        "title": "Keseimbangan Pasar: Permintaan & Penawaran",
+        "description": "Eksperimen mikroekonomi penentuan harga ekuilibrium P* dan kuantitas pasar Q* dari kurva supply dan demand.",
+        "domain": "Economics",
+        "concepts": [
+          "supply",
+          "demand",
+          "equilibrium",
+          "market",
+          "permintaan",
+          "penawaran",
+          "harga",
+          "pasar"
+        ],
+        "parameters": {
+          "demandIntercept": {
+            "value": 100,
+            "min": 50,
+            "max": 200,
+            "step": 5,
+            "unit": "$",
+            "label": "Batas Harga Permintaan"
+          },
+          "demandSlope": {
+            "value": -2,
+            "min": -5,
+            "max": -0.5,
+            "step": 0.1,
+            "label": "Elastisitas Permintaan"
+          },
+          "supplyIntercept": {
+            "value": 20,
+            "min": 0,
+            "max": 80,
+            "step": 5,
+            "unit": "$",
+            "label": "Biaya Dasar Penawaran"
+          },
+          "supplySlope": {
+            "value": 2,
+            "min": 0.5,
+            "max": 5,
+            "step": 0.1,
+            "label": "Elastisitas Penawaran"
+          }
+        },
+        "controls": [
+          "demandIntercept",
+          "demandSlope",
+          "supplyIntercept",
+          "supplySlope"
+        ]
+      },
+      "status": "active",
+      "version": 1,
+      "createdAt": "2026-10-03T00:00:00.000Z"
+    },
+    "break-even-point": {
+      "id": "tpl-1791108209011-7z16",
+      "slug": "break-even-point",
+      "title": "Analisis Titik Impas (Break-Even Point / BEP)",
+      "domain": "Accounting",
+      "engine": "economics",
+      "prompt": "Simulasi osilasi pegas",
+      "definition": {
+        "engine": "economics",
+        "simulation": "break_even_point",
+        "version": 1,
+        "title": "Analisis Titik Impas (Break-Even Point / BEP)",
+        "description": "Simulasi penentuan volume penjualan minimum untuk menutup seluruh biaya tetap dan variabel perusahaan.",
+        "domain": "Accounting",
+        "concepts": [
+          "break-even",
+          "fixed-cost",
+          "variable-cost",
+          "contribution-margin",
+          "margin-of-safety"
+        ],
+        "parameters": {
+          "fixedCostJuta": {
+            "value": 30,
+            "min": 10,
+            "max": 100,
+            "step": 5,
+            "unit": "Juta Rp",
+            "label": "Biaya Tetap (FC)"
+          },
+          "variableCostRibu": {
+            "value": 60,
+            "min": 20,
+            "max": 200,
+            "step": 5,
+            "unit": "Ribu Rp/Unit",
+            "label": "Biaya Variabel (VC)"
+          },
+          "sellingPriceRibu": {
+            "value": 100,
+            "min": 50,
+            "max": 300,
+            "step": 10,
+            "unit": "Ribu Rp/Unit",
+            "label": "Harga Jual (P)"
+          }
+        },
+        "controls": [
+          "fixedCostJuta",
+          "variableCostRibu",
+          "sellingPriceRibu"
+        ]
+      },
+      "status": "published",
+      "version": 19,
+      "usageCount": 19,
+      "createdAt": "2026-10-04T10:03:29.011Z"
+    },
+    "hukum-gravitasi": {
+      "id": "sim-hukum-gravitasi",
+      "slug": "hukum-gravitasi",
+      "title": "Hukum Gravitasi Universal",
+      "domain": "Fisika",
+      "engine": "universal",
+      "prompt": "Simulasi gaya tarik gravitasi antar dua massa benda.",
+      "definition": {
+        "engine": "universal",
+        "simulation": "hukum-gravitasi",
+        "version": 1,
+        "title": "Hukum Gravitasi Universal",
+        "description": "Simulasi gaya tarik gravitasi antar dua massa benda.",
+        "domain": "Fisika",
+        "concepts": [
+          "Gravitasi"
+        ],
+        "parameters": {
+          "m1": {
+            "value": 10,
+            "min": 1,
+            "max": 100,
+            "step": 1,
+            "unit": "kg",
+            "label": "Massa Benda 1"
+          },
+          "m2": {
+            "value": 10,
+            "min": 1,
+            "max": 100,
+            "step": 1,
+            "unit": "kg",
+            "label": "Massa Benda 2"
+          },
+          "r": {
+            "value": 5,
+            "min": 1,
+            "max": 50,
+            "step": 1,
+            "unit": "m",
+            "label": "Jarak (r)"
+          }
+        },
+        "controls": [
+          "m1",
+          "m2",
+          "r"
+        ]
+      },
+      "unifiedSpec": {
+        "id": "sim-hukum-gravitasi",
+        "slug": "hukum-gravitasi",
+        "info": {
+          "title": "Hukum Gravitasi Universal",
+          "description": "Simulasi gaya tarik gravitasi antar dua massa benda.",
+          "discipline": "Fisika",
+          "topic": "Gravitasi",
+          "difficulty": "intermediate",
+          "estimatedTime": "10–15 menit",
+          "thumbnailUrl": null,
+          "coverUrl": null,
+          "status": "published",
+          "version": 1
+        },
+        "parameters": {
+          "m1": {
+            "key": "m1",
+            "label": "Massa Benda 1",
+            "min": 1,
+            "max": 100,
+            "step": 1,
+            "defaultVal": 10,
+            "unit": "kg"
+          },
+          "m2": {
+            "key": "m2",
+            "label": "Massa Benda 2",
+            "min": 1,
+            "max": 100,
+            "step": 1,
+            "defaultVal": 10,
+            "unit": "kg"
+          },
+          "r": {
+            "key": "r",
+            "label": "Jarak (r)",
+            "min": 1,
+            "max": 50,
+            "step": 1,
+            "defaultVal": 5,
+            "unit": "m"
+          }
+        },
+        "calculations": {
+          "forceG": {
+            "key": "forceG",
+            "label": "Gaya Gravitasi",
+            "formula": "6.674 * (m1 * m2) / (r ^ 2)",
+            "unit": "pN"
+          }
+        },
+        "visual": {
+          "viewBox": {
+            "width": 640,
+            "height": 360
+          },
+          "archetype": "universal",
+          "groundPlane": true,
+          "elements": []
+        },
+        "results": [],
+        "insight": {
+          "summary": "",
+          "causeAndEffect": ""
+        },
+        "experiments": []
+      },
+      "status": "published",
+      "version": 1,
+      "usageCount": 1,
+      "createdAt": "2026-10-05T03:20:05.840Z"
+    },
+    "hukum-hooke": {
+      "id": "sim-hukum-hooke",
+      "slug": "hukum-hooke",
+      "title": "Hukum Hooke (Elastisitas Pegas)",
+      "domain": "Fisika",
+      "engine": "physics",
+      "prompt": "Eksperimen pertambahan panjang pegas terhadap gaya tarik dan konstanta pegas (F = k · Δx).",
+      "definition": {
+        "engine": "physics",
+        "simulation": "hukum-hooke",
+        "version": 1,
+        "title": "Hukum Hooke (Elastisitas Pegas)",
+        "description": "Eksperimen pertambahan panjang pegas terhadap gaya tarik dan konstanta pegas (F = k · Δx).",
+        "domain": "Fisika",
+        "concepts": [
+          "Elastisitas & Getaran"
+        ],
+        "parameters": {
+          "k": {
+            "value": 200,
+            "min": 50,
+            "max": 500,
+            "step": 25,
+            "unit": "N/m",
+            "label": "Konstanta Pegas (k)"
+          },
+          "mass": {
+            "value": 2,
+            "min": 0.5,
+            "max": 10,
+            "step": 0.5,
+            "unit": "kg",
+            "label": "Massa Beban Gantung"
+          },
+          "gravity": {
+            "value": 9.8,
+            "min": 1,
+            "max": 20,
+            "step": 0.1,
+            "unit": "m/s²",
+            "label": "Percepatan Gravitasi (g)"
+          }
+        },
+        "controls": [
+          "k",
+          "mass",
+          "gravity"
+        ]
+      },
+      "unifiedSpec": {
+        "id": "sim-hukum-hooke",
+        "slug": "hukum-hooke",
+        "info": {
+          "title": "Hukum Hooke (Elastisitas Pegas)",
+          "description": "Eksperimen pertambahan panjang pegas terhadap gaya tarik dan konstanta pegas (F = k · Δx).",
+          "discipline": "Fisika",
+          "topic": "Elastisitas & Getaran",
+          "difficulty": "basic",
+          "estimatedTime": "10–15 menit",
+          "status": "published",
+          "version": 1
+        },
+        "parameters": {
+          "k": {
+            "key": "k",
+            "label": "Konstanta Pegas (k)",
+            "min": 50,
+            "max": 500,
+            "step": 25,
+            "defaultVal": 200,
+            "unit": "N/m",
+            "description": "Kekakuan pegas mekanik"
+          },
+          "mass": {
+            "key": "mass",
+            "label": "Massa Beban Gantung",
+            "min": 0.5,
+            "max": 10,
+            "step": 0.5,
+            "defaultVal": 2,
+            "unit": "kg",
+            "description": "Massa beban yang digantung pada pegas"
+          },
+          "gravity": {
+            "key": "gravity",
+            "label": "Percepatan Gravitasi (g)",
+            "min": 1,
+            "max": 20,
+            "step": 0.1,
+            "defaultVal": 9.8,
+            "unit": "m/s²",
+            "description": "Medan gravitasi lokal"
+          }
+        },
+        "calculations": {
+          "weight": {
+            "key": "weight",
+            "label": "Gaya Berat Beban (W)",
+            "formula": "mass * gravity",
+            "unit": "N"
+          },
+          "deltaX": {
+            "key": "deltaX",
+            "label": "Pertambahan Panjang (Δx)",
+            "formula": "weight / k",
+            "unit": "m"
+          },
+          "potentialEnergy": {
+            "key": "potentialEnergy",
+            "label": "Energi Potensial Pegas (Ep)",
+            "formula": "0.5 * k * (deltaX ^ 2)",
+            "unit": "Joule"
+          }
+        },
+        "visual": {
+          "viewBox": {
+            "width": 640,
+            "height": 360
+          },
+          "archetype": "physics",
+          "groundPlane": false,
+          "elements": [
+            {
+              "id": "ceiling",
+              "type": "line",
+              "x": 260,
+              "y": 40,
+              "x2": 380,
+              "y2": 40,
+              "stroke": "var(--color-border)",
+              "strokeWidth": 4
+            },
+            {
+              "id": "spring-line",
+              "type": "line",
+              "x": 320,
+              "y": 40,
+              "x2": 320,
+              "y2": "60 + deltaX * 800",
+              "stroke": "var(--color-primary)",
+              "strokeWidth": 3
+            },
+            {
+              "id": "mass-box",
+              "type": "shape",
+              "x": 290,
+              "y": "60 + deltaX * 800",
+              "width": 60,
+              "height": 50,
+              "fill": "var(--color-canvas-object)",
+              "stroke": "var(--color-secondary)",
+              "strokeWidth": 2
+            },
+            {
+              "id": "gravity-arrow",
+              "type": "arrow",
+              "x": 320,
+              "y": "110 + deltaX * 800",
+              "x2": 320,
+              "y2": "160 + deltaX * 800",
+              "stroke": "var(--color-accent)",
+              "strokeWidth": 2.5,
+              "label": "W = m·g"
+            }
+          ]
+        },
+        "results": [
+          {
+            "key": "dx",
+            "label": "Pertambahan Panjang",
+            "symbol": "Δx",
+            "calculationKey": "deltaX",
+            "unit": "m",
+            "highlight": true
+          },
+          {
+            "key": "w",
+            "label": "Gaya Berat Beban",
+            "symbol": "W",
+            "calculationKey": "weight",
+            "unit": "N"
+          },
+          {
+            "key": "ep",
+            "label": "Energi Potensial",
+            "symbol": "Ep",
+            "calculationKey": "potentialEnergy",
+            "unit": "J"
+          }
+        ],
+        "insight": {
+          "summary": "Pertambahan panjang pegas berbanding lurus dengan gaya berat dan berbanding terbalik dengan konstanta pegas.",
+          "causeAndEffect": "Semakin kaku pegas (nilai k besar), pertambahan panjang akan semakin kecil untuk beban yang sama.",
+          "whatIf": "Jika konstanta pegas dilipatgandakan, regangan pegas terpangkas separuhnya."
+        },
+        "experiments": [
+          {
+            "id": "exp-hooke-1",
+            "title": "Tantangan Regangan Tepat 0.10 m",
+            "objective": "Sesuaikan konstanta pegas atau massa beban hingga pegas meregang tepat 0.10 m (toleransi 0.01 m).",
+            "targetMetric": "deltaX",
+            "targetValue": 0.1,
+            "tolerance": 0.01,
+            "unit": "m",
+            "successMessage": "Hebat! Kamu berhasil menyeimbangkan gaya beban dengan elastisitas pegas."
+          }
+        ]
+      },
+      "status": "published",
+      "version": 1,
+      "usageCount": 4,
+      "createdAt": "2026-10-05T03:20:33.086Z"
+    },
+    "gerak-balok-gesek": {
+      "id": "tpl-1791515262351-7bjk",
+      "slug": "gerak-balok-gesek",
+      "title": "Simulasi Gerak Balok dengan Gaya Gesek",
+      "domain": "physics",
+      "engine": "physics",
+      "prompt": "Simulasi gerak balok gaya gesek dengan massa 10 kg dan gaya 50 N",
+      "definition": {
+        "simulation": "gerak-balok-gesek",
+        "title": "Simulasi Gerak Balok dengan Gaya Gesek",
+        "description": "Simulasi interaktif untuk memahami hubungan matematis dan fisik antara gaya dorong, massa balok, gaya gesek, dan percepatan.",
+        "engine": "physics",
+        "version": 1,
+        "parameters": {
+          "mass": {
+            "label": "Massa Balok",
+            "min": 1,
+            "max": 50,
+            "step": 1,
+            "value": 10,
+            "unit": "kg",
+            "description": ""
+          },
+          "force": {
+            "label": "Gaya Dorong",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "value": 50,
+            "unit": "N",
+            "description": ""
+          },
+          "mu": {
+            "label": "Koefisien Gesek",
+            "min": 0,
+            "max": 0.8,
+            "step": 0.05,
+            "value": 0.2,
+            "unit": "",
+            "description": ""
+          }
+        },
+        "controls": [
+          "mass",
+          "force",
+          "mu"
+        ]
+      },
+      "status": "published",
+      "version": 3,
+      "usageCount": 3,
+      "createdAt": "2026-10-09T03:07:42.352Z"
+    }
+  },
+  "sessions": {
+    "sess-compound-interest-1791023694030": {
+      "id": "sess-compound-interest-1791023694030",
+      "templateSlug": "compound-interest",
+      "currentState": {
+        "parameters": {
+          "principal": 10,
+          "ratePercent": 8,
+          "years": 10,
+          "compoundsPerYear": 12
+        },
+        "computed": {
+          "finalAmount": 22.2,
+          "totalInterest": 12.2,
+          "multiplier": 2.22,
+          "rule72Years": 9,
+          "finalAmount_display": "Rp 22.20 jt",
+          "totalInterest_display": "Rp 12.20 jt",
+          "multiplier_display": "2.22x lipat",
+          "rule72_display": "Lipat dua setiap ~9.0 tahun",
+          "equation": "A = 10 · (1 + 0.08/12)^(12·10) = Rp 22.20 jt"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T10:34:55.648Z",
+      "lastActiveAt": "2026-10-03T10:34:55.650Z"
+    },
+    "sess-vector-math-1791023728035": {
+      "id": "sess-vector-math-1791023728035",
+      "templateSlug": "vector-math",
+      "currentState": {
+        "parameters": {
+          "ax": -7,
+          "ay": -10,
+          "bx": 2,
+          "by": 5
+        },
+        "computed": {
+          "rx": -5,
+          "ry": -5,
+          "magA": 12.21,
+          "magB": 5.39,
+          "magR": 7.07,
+          "dotProduct": -64,
+          "angleDegR": 225,
+          "magR_display": "7.07 unit",
+          "dotProduct_display": "-64",
+          "resultant_vector": "R = (-5i + -5j)",
+          "equation": "|R| = √(-5² + -5²) = 7.07"
+        }
+      },
+      "history": [],
+      "chatMessages": [
+        {
+          "id": "msg-1791023747281-d2v",
+          "role": "user",
+          "content": "Kasih aku tantangan!",
+          "context": {
+            "simulation": {
+              "id": "vector_math",
+              "slug": "vector-math",
+              "title": "Operasi Vektor 2D",
+              "domain": "Matematika",
+              "engine": "mathematics",
+              "description": "Visualisasi penjumlahan vektor, peruraian komponen kartesius X-Y, perhitungan magnitudo, sudut resultan, dan perkalian skalar titik (dot product)."
+            },
+            "state": {
+              "parameters": {
+                "ax": -7,
+                "ay": -10,
+                "bx": 2,
+                "by": 5
+              },
+              "computed": {
+                "rx": -5,
+                "ry": -5,
+                "magA": 12.21,
+                "magB": 5.39,
+                "magR": 7.07,
+                "dotProduct": -64,
+                "angleDegR": 225,
+                "magR_display": "7.07 unit",
+                "dotProduct_display": "-64",
+                "resultant_vector": "R = (-5i + -5j)",
+                "equation": "|R| = √(-5² + -5²) = 7.07"
+              }
+            },
+            "experiment": {
+              "challengeId": "reach-resultant-10",
+              "title": "Target Magnitudo Resultan 10",
+              "objective": "Bentuk vektor resultan dengan panjang magnitudo tepat 10.0 unit.",
+              "isCompleted": false,
+              "targetCondition": {
+                "output": "magR",
+                "operator": "==",
+                "value": 10,
+                "tolerance": 0.1
+              }
+            },
+            "history": []
+          },
+          "timestamp": "2026-10-03T10:35:47.281Z"
+        },
+        {
+          "id": "msg-1791023747283-krh",
+          "role": "assistant",
+          "content": "Operasi vektor melibatkan komponen arah dan magnitudo. Perkalian titik (dot product) A · B = Ax·Bx + Ay·By saat ini bernilai -64. Jika dot product bernilai 0, maka kedua vektor tegak lurus (ortogonal, sudut 90°). Resultan vektor R = A + B memiliki panjang magnitudo 7.07 unit.",
+          "timestamp": "2026-10-03T10:35:47.283Z"
+        },
+        {
+          "id": "msg-1791023755591-w6e",
+          "role": "user",
+          "content": "MKSD NYA?",
+          "context": {
+            "simulation": {
+              "id": "vector_math",
+              "slug": "vector-math",
+              "title": "Operasi Vektor 2D",
+              "domain": "Matematika",
+              "engine": "mathematics",
+              "description": "Visualisasi penjumlahan vektor, peruraian komponen kartesius X-Y, perhitungan magnitudo, sudut resultan, dan perkalian skalar titik (dot product)."
+            },
+            "state": {
+              "parameters": {
+                "ax": -7,
+                "ay": -10,
+                "bx": 2,
+                "by": 5
+              },
+              "computed": {
+                "rx": -5,
+                "ry": -5,
+                "magA": 12.21,
+                "magB": 5.39,
+                "magR": 7.07,
+                "dotProduct": -64,
+                "angleDegR": 225,
+                "magR_display": "7.07 unit",
+                "dotProduct_display": "-64",
+                "resultant_vector": "R = (-5i + -5j)",
+                "equation": "|R| = √(-5² + -5²) = 7.07"
+              }
+            },
+            "experiment": {
+              "challengeId": "reach-resultant-10",
+              "title": "Target Magnitudo Resultan 10",
+              "objective": "Bentuk vektor resultan dengan panjang magnitudo tepat 10.0 unit.",
+              "isCompleted": false,
+              "targetCondition": {
+                "output": "magR",
+                "operator": "==",
+                "value": 10,
+                "tolerance": 0.1
+              }
+            },
+            "history": []
+          },
+          "timestamp": "2026-10-03T10:35:55.591Z"
+        },
+        {
+          "id": "msg-1791023755592-au8",
+          "role": "assistant",
+          "content": "Operasi vektor melibatkan komponen arah dan magnitudo. Perkalian titik (dot product) A · B = Ax·Bx + Ay·By saat ini bernilai -64. Jika dot product bernilai 0, maka kedua vektor tegak lurus (ortogonal, sudut 90°). Resultan vektor R = A + B memiliki panjang magnitudo 7.07 unit.",
+          "timestamp": "2026-10-03T10:35:55.592Z"
+        },
+        {
+          "id": "msg-1791023758393-87n",
+          "role": "user",
+          "content": "Bagaimana jika parameter digandakan?",
+          "context": {
+            "simulation": {
+              "id": "vector_math",
+              "slug": "vector-math",
+              "title": "Operasi Vektor 2D",
+              "domain": "Matematika",
+              "engine": "mathematics",
+              "description": "Visualisasi penjumlahan vektor, peruraian komponen kartesius X-Y, perhitungan magnitudo, sudut resultan, dan perkalian skalar titik (dot product)."
+            },
+            "state": {
+              "parameters": {
+                "ax": -7,
+                "ay": -10,
+                "bx": 2,
+                "by": 5
+              },
+              "computed": {
+                "rx": -5,
+                "ry": -5,
+                "magA": 12.21,
+                "magB": 5.39,
+                "magR": 7.07,
+                "dotProduct": -64,
+                "angleDegR": 225,
+                "magR_display": "7.07 unit",
+                "dotProduct_display": "-64",
+                "resultant_vector": "R = (-5i + -5j)",
+                "equation": "|R| = √(-5² + -5²) = 7.07"
+              }
+            },
+            "experiment": {
+              "challengeId": "reach-resultant-10",
+              "title": "Target Magnitudo Resultan 10",
+              "objective": "Bentuk vektor resultan dengan panjang magnitudo tepat 10.0 unit.",
+              "isCompleted": false,
+              "targetCondition": {
+                "output": "magR",
+                "operator": "==",
+                "value": 10,
+                "tolerance": 0.1
+              }
+            },
+            "history": []
+          },
+          "timestamp": "2026-10-03T10:35:58.393Z"
+        },
+        {
+          "id": "msg-1791023758395-yho",
+          "role": "assistant",
+          "content": "Operasi vektor melibatkan komponen arah dan magnitudo. Perkalian titik (dot product) A · B = Ax·Bx + Ay·By saat ini bernilai -64. Jika dot product bernilai 0, maka kedua vektor tegak lurus (ortogonal, sudut 90°). Resultan vektor R = A + B memiliki panjang magnitudo 7.07 unit.",
+          "timestamp": "2026-10-03T10:35:58.395Z"
+        },
+        {
+          "id": "msg-1791023760562-i9t",
+          "role": "user",
+          "content": "Kasih aku tantangan!",
+          "context": {
+            "simulation": {
+              "id": "vector_math",
+              "slug": "vector-math",
+              "title": "Operasi Vektor 2D",
+              "domain": "Matematika",
+              "engine": "mathematics",
+              "description": "Visualisasi penjumlahan vektor, peruraian komponen kartesius X-Y, perhitungan magnitudo, sudut resultan, dan perkalian skalar titik (dot product)."
+            },
+            "state": {
+              "parameters": {
+                "ax": -7,
+                "ay": -10,
+                "bx": 2,
+                "by": 5
+              },
+              "computed": {
+                "rx": -5,
+                "ry": -5,
+                "magA": 12.21,
+                "magB": 5.39,
+                "magR": 7.07,
+                "dotProduct": -64,
+                "angleDegR": 225,
+                "magR_display": "7.07 unit",
+                "dotProduct_display": "-64",
+                "resultant_vector": "R = (-5i + -5j)",
+                "equation": "|R| = √(-5² + -5²) = 7.07"
+              }
+            },
+            "experiment": {
+              "challengeId": "reach-resultant-10",
+              "title": "Target Magnitudo Resultan 10",
+              "objective": "Bentuk vektor resultan dengan panjang magnitudo tepat 10.0 unit.",
+              "isCompleted": false,
+              "targetCondition": {
+                "output": "magR",
+                "operator": "==",
+                "value": 10,
+                "tolerance": 0.1
+              }
+            },
+            "history": []
+          },
+          "timestamp": "2026-10-03T10:36:00.562Z"
+        },
+        {
+          "id": "msg-1791023760565-h7e",
+          "role": "assistant",
+          "content": "Operasi vektor melibatkan komponen arah dan magnitudo. Perkalian titik (dot product) A · B = Ax·Bx + Ay·By saat ini bernilai -64. Jika dot product bernilai 0, maka kedua vektor tegak lurus (ortogonal, sudut 90°). Resultan vektor R = A + B memiliki panjang magnitudo 7.07 unit.",
+          "timestamp": "2026-10-03T10:36:00.565Z"
+        },
+        {
+          "id": "msg-1791023763209-erp",
+          "role": "user",
+          "content": "Jelaskan kondisi parameter saat ini",
+          "context": {
+            "simulation": {
+              "id": "vector_math",
+              "slug": "vector-math",
+              "title": "Operasi Vektor 2D",
+              "domain": "Matematika",
+              "engine": "mathematics",
+              "description": "Visualisasi penjumlahan vektor, peruraian komponen kartesius X-Y, perhitungan magnitudo, sudut resultan, dan perkalian skalar titik (dot product)."
+            },
+            "state": {
+              "parameters": {
+                "ax": -7,
+                "ay": -10,
+                "bx": 2,
+                "by": 5
+              },
+              "computed": {
+                "rx": -5,
+                "ry": -5,
+                "magA": 12.21,
+                "magB": 5.39,
+                "magR": 7.07,
+                "dotProduct": -64,
+                "angleDegR": 225,
+                "magR_display": "7.07 unit",
+                "dotProduct_display": "-64",
+                "resultant_vector": "R = (-5i + -5j)",
+                "equation": "|R| = √(-5² + -5²) = 7.07"
+              }
+            },
+            "experiment": {
+              "challengeId": "reach-resultant-10",
+              "title": "Target Magnitudo Resultan 10",
+              "objective": "Bentuk vektor resultan dengan panjang magnitudo tepat 10.0 unit.",
+              "isCompleted": false,
+              "targetCondition": {
+                "output": "magR",
+                "operator": "==",
+                "value": 10,
+                "tolerance": 0.1
+              }
+            },
+            "history": []
+          },
+          "timestamp": "2026-10-03T10:36:03.209Z"
+        },
+        {
+          "id": "msg-1791023763212-wrc",
+          "role": "assistant",
+          "content": "Operasi vektor melibatkan komponen arah dan magnitudo. Perkalian titik (dot product) A · B = Ax·Bx + Ay·By saat ini bernilai -64. Jika dot product bernilai 0, maka kedua vektor tegak lurus (ortogonal, sudut 90°). Resultan vektor R = A + B memiliki panjang magnitudo 7.07 unit.",
+          "timestamp": "2026-10-03T10:36:03.212Z"
+        },
+        {
+          "id": "msg-1791023765226-98p",
+          "role": "user",
+          "content": "ASDAS",
+          "context": {
+            "simulation": {
+              "id": "vector_math",
+              "slug": "vector-math",
+              "title": "Operasi Vektor 2D",
+              "domain": "Matematika",
+              "engine": "mathematics",
+              "description": "Visualisasi penjumlahan vektor, peruraian komponen kartesius X-Y, perhitungan magnitudo, sudut resultan, dan perkalian skalar titik (dot product)."
+            },
+            "state": {
+              "parameters": {
+                "ax": -7,
+                "ay": -10,
+                "bx": 2,
+                "by": 5
+              },
+              "computed": {
+                "rx": -5,
+                "ry": -5,
+                "magA": 12.21,
+                "magB": 5.39,
+                "magR": 7.07,
+                "dotProduct": -64,
+                "angleDegR": 225,
+                "magR_display": "7.07 unit",
+                "dotProduct_display": "-64",
+                "resultant_vector": "R = (-5i + -5j)",
+                "equation": "|R| = √(-5² + -5²) = 7.07"
+              }
+            },
+            "experiment": {
+              "challengeId": "reach-resultant-10",
+              "title": "Target Magnitudo Resultan 10",
+              "objective": "Bentuk vektor resultan dengan panjang magnitudo tepat 10.0 unit.",
+              "isCompleted": false,
+              "targetCondition": {
+                "output": "magR",
+                "operator": "==",
+                "value": 10,
+                "tolerance": 0.1
+              }
+            },
+            "history": []
+          },
+          "timestamp": "2026-10-03T10:36:05.226Z"
+        },
+        {
+          "id": "msg-1791023765228-kt1",
+          "role": "assistant",
+          "content": "Operasi vektor melibatkan komponen arah dan magnitudo. Perkalian titik (dot product) A · B = Ax·Bx + Ay·By saat ini bernilai -64. Jika dot product bernilai 0, maka kedua vektor tegak lurus (ortogonal, sudut 90°). Resultan vektor R = A + B memiliki panjang magnitudo 7.07 unit.",
+          "timestamp": "2026-10-03T10:36:05.228Z"
+        }
+      ],
+      "startedAt": "2026-10-03T10:35:28.736Z",
+      "lastActiveAt": "2026-10-03T10:36:05.228Z"
+    },
+    "sess-vector-math-1791023784941": {
+      "id": "sess-vector-math-1791023784941",
+      "templateSlug": "vector-math",
+      "currentState": {
+        "parameters": {
+          "ax": 4,
+          "ay": 3,
+          "bx": 2,
+          "by": 5
+        },
+        "computed": {
+          "rx": 6,
+          "ry": 8,
+          "magA": 5,
+          "magB": 5.39,
+          "magR": 10,
+          "dotProduct": 23,
+          "angleDegR": 53,
+          "magR_display": "10.00 unit",
+          "dotProduct_display": "23",
+          "resultant_vector": "R = (6i + 8j)",
+          "equation": "|R| = √(6² + 8²) = 10.00"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T10:36:25.602Z",
+      "lastActiveAt": "2026-10-03T10:36:25.604Z"
+    },
+    "sess-compound-interest-1791023789983": {
+      "id": "sess-compound-interest-1791023789983",
+      "templateSlug": "compound-interest",
+      "currentState": {
+        "parameters": {
+          "principal": 100,
+          "ratePercent": 20,
+          "years": 30,
+          "compoundsPerYear": 12
+        },
+        "computed": {
+          "finalAmount": 38396.4,
+          "totalInterest": 38296.4,
+          "multiplier": 383.96,
+          "rule72Years": 3.6,
+          "finalAmount_display": "Rp 38396.40 jt",
+          "totalInterest_display": "Rp 38296.40 jt",
+          "multiplier_display": "383.96x lipat",
+          "rule72_display": "Lipat dua setiap ~3.6 tahun",
+          "equation": "A = 100 · (1 + 0.20/12)^(12·30) = Rp 38396.40 jt"
+        }
+      },
+      "history": [],
+      "chatMessages": [
+        {
+          "id": "msg-1791023832542-q5h",
+          "role": "user",
+          "content": "Bagaimana jika parameter digandakan?",
+          "context": {
+            "simulation": {
+              "id": "compound_interest",
+              "slug": "compound-interest",
+              "title": "Bunga Majemuk Eksponensial (Compound Interest)",
+              "domain": "Ekonomi",
+              "engine": "economics",
+              "description": "Visualisasi pertumbuhan nilai uang masa depan. Amati efek eksponensial suku bunga, durasi investasi, dan frekuensi majemuk (Rule of 72)."
+            },
+            "state": {
+              "parameters": {
+                "principal": 100,
+                "ratePercent": 20,
+                "years": 30,
+                "compoundsPerYear": 12
+              },
+              "computed": {
+                "finalAmount": 38396.4,
+                "totalInterest": 38296.4,
+                "multiplier": 383.96,
+                "rule72Years": 3.6,
+                "finalAmount_display": "Rp 38396.40 jt",
+                "totalInterest_display": "Rp 38296.40 jt",
+                "multiplier_display": "383.96x lipat",
+                "rule72_display": "Lipat dua setiap ~3.6 tahun",
+                "equation": "A = 100 · (1 + 0.20/12)^(12·30) = Rp 38396.40 jt"
+              }
+            },
+            "experiment": {
+              "challengeId": "double-money-target",
+              "title": "Pelipatgandaan Modal (2.0x)",
+              "objective": "Capai nilai pelipatgandaan modal akhir ≥ 2.0x dari modal awal.",
+              "isCompleted": false,
+              "targetCondition": {
+                "output": "multiplier",
+                "operator": ">=",
+                "value": 2,
+                "tolerance": 0.05
+              }
+            },
+            "history": []
+          },
+          "timestamp": "2026-10-03T10:37:12.542Z"
+        },
+        {
+          "id": "msg-1791023832544-zfa",
+          "role": "assistant",
+          "content": "PREDIKSI WHAT-IF:\nJika batas harga permintaan dinaikkan dari $100 menjadi $120 (kurva permintaan bergeser ke kanan atas):\n\nEkuilibrium baru akan tercapai pada:\n• Harga pasar P* naik dari $60 menjadi $70\n• Kuantitas barang beredar Q* naik dari 20.0 menjadi 25.0 unit.\n\nHal ini menunjukkan bahwa peningkatan minat atau daya beli konsumen akan mendongkrak harga sekaligus mendorong produsen memproduksi lebih banyak.",
+          "action": {
+            "type": "set_parameters",
+            "label": "TERAPKAN PERUBAHAN: PERMINTAAN +20",
+            "parameters": {
+              "demandIntercept": 120
+            },
+            "preview": {
+              "parameter": "Demand Intercept",
+              "from": "$100",
+              "to": "$120",
+              "predictedOutput": "P* = $70, Q* = 25.0"
+            }
+          },
+          "timestamp": "2026-10-03T10:37:12.544Z"
+        }
+      ],
+      "startedAt": "2026-10-03T10:36:30.681Z",
+      "lastActiveAt": "2026-10-03T10:37:19.228Z"
+    },
+    "sess-compound-interest-1791024242841": {
+      "id": "sess-compound-interest-1791024242841",
+      "templateSlug": "compound-interest",
+      "currentState": {
+        "parameters": {
+          "principal": 100,
+          "ratePercent": 20,
+          "years": 30,
+          "compoundsPerYear": 12
+        },
+        "computed": {
+          "finalAmount": 38396.4,
+          "totalInterest": 38296.4,
+          "multiplier": 383.96,
+          "rule72Years": 3.6,
+          "finalAmount_display": "Rp 38396.40 jt",
+          "totalInterest_display": "Rp 38296.40 jt",
+          "multiplier_display": "383.96x lipat",
+          "rule72_display": "Lipat dua setiap ~3.6 tahun",
+          "equation": "A = 100 · (1 + 0.20/12)^(12·30) = Rp 38396.40 jt"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T10:44:05.000Z",
+      "lastActiveAt": "2026-10-03T10:44:05.001Z"
+    },
+    "sess-compound-interest-1791024671919": {
+      "id": "sess-compound-interest-1791024671919",
+      "templateSlug": "compound-interest",
+      "currentState": {
+        "parameters": {
+          "principal": 10,
+          "ratePercent": 8,
+          "years": 10,
+          "compoundsPerYear": 12
+        },
+        "computed": {
+          "finalAmount": 22.2,
+          "totalInterest": 12.2,
+          "multiplier": 2.22,
+          "rule72Years": 9,
+          "finalAmount_display": "Rp 22.20 jt",
+          "totalInterest_display": "Rp 12.20 jt",
+          "multiplier_display": "2.22x lipat",
+          "rule72_display": "Lipat dua setiap ~9.0 tahun",
+          "equation": "A = 10 · (1 + 0.08/12)^(12·10) = Rp 22.20 jt"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T10:51:12.591Z",
+      "lastActiveAt": "2026-10-03T10:51:12.592Z"
+    },
+    "sess-supply-demand-1791024693435": {
+      "id": "sess-supply-demand-1791024693435",
+      "templateSlug": "supply-demand",
+      "currentState": {
+        "parameters": {
+          "demandIntercept": 100,
+          "demandSlope": -2,
+          "supplyIntercept": 10,
+          "supplySlope": 1.5
+        },
+        "computed": {
+          "equilibriumPrice": 48.57,
+          "equilibriumQuantity": 25.71,
+          "consumerSurplus": 661.22,
+          "producerSurplus": 495.92,
+          "totalSurplus": 1157.14,
+          "equilibriumPrice_display": "$48.57",
+          "equilibriumQuantity_display": "25.7 units",
+          "demandEquation": "P = 100  -2Q",
+          "supplyEquation": "P = 10 + 1.5Q"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T10:51:34.110Z",
+      "lastActiveAt": "2026-10-03T10:51:34.113Z"
+    },
+    "sess-supply-demand-1791024907519": {
+      "id": "sess-supply-demand-1791024907519",
+      "templateSlug": "supply-demand",
+      "currentState": {
+        "parameters": {
+          "demandIntercept": 100,
+          "demandSlope": -2,
+          "supplyIntercept": 10,
+          "supplySlope": 1.5
+        },
+        "computed": {
+          "equilibriumPrice": 48.57,
+          "equilibriumQuantity": 25.71,
+          "consumerSurplus": 661.22,
+          "producerSurplus": 495.92,
+          "totalSurplus": 1157.14,
+          "equilibriumPrice_display": "$48.57",
+          "equilibriumQuantity_display": "25.7 units",
+          "demandEquation": "P = 100  -2Q",
+          "supplyEquation": "P = 10 + 1.5Q"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T10:55:09.013Z",
+      "lastActiveAt": "2026-10-03T10:55:09.016Z"
+    },
+    "sess-supply-demand-1791024964740": {
+      "id": "sess-supply-demand-1791024964740",
+      "templateSlug": "supply-demand",
+      "currentState": {
+        "parameters": {
+          "demandIntercept": 100,
+          "demandSlope": -2,
+          "supplyIntercept": 10,
+          "supplySlope": 2
+        },
+        "computed": {
+          "equilibriumPrice": 55,
+          "equilibriumQuantity": 22.5,
+          "consumerSurplus": 506.25,
+          "producerSurplus": 506.25,
+          "totalSurplus": 1012.5,
+          "equilibriumPrice_display": "$55.00",
+          "equilibriumQuantity_display": "22.5 units",
+          "demandEquation": "P = 100  -2Q",
+          "supplyEquation": "P = 10 + 2Q"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T10:56:05.525Z",
+      "lastActiveAt": "2026-10-03T10:56:08.913Z"
+    },
+    "sess-supply-demand-1791024976832": {
+      "id": "sess-supply-demand-1791024976832",
+      "templateSlug": "supply-demand",
+      "currentState": {
+        "parameters": {
+          "demandIntercept": 100,
+          "demandSlope": -2,
+          "supplyIntercept": 10,
+          "supplySlope": 2
+        },
+        "computed": {
+          "equilibriumPrice": 55,
+          "equilibriumQuantity": 22.5,
+          "consumerSurplus": 506.25,
+          "producerSurplus": 506.25,
+          "totalSurplus": 1012.5,
+          "equilibriumPrice_display": "$55.00",
+          "equilibriumQuantity_display": "22.5 units",
+          "demandEquation": "P = 100  -2Q",
+          "supplyEquation": "P = 10 + 2Q"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T10:56:17.988Z",
+      "lastActiveAt": "2026-10-03T10:56:17.988Z"
+    },
+    "sess-supply-demand-1791025209277": {
+      "id": "sess-supply-demand-1791025209277",
+      "templateSlug": "supply-demand",
+      "currentState": {
+        "parameters": {
+          "demandIntercept": 100,
+          "demandSlope": -2,
+          "supplyIntercept": 10,
+          "supplySlope": 2
+        },
+        "computed": {
+          "equilibriumPrice": 55,
+          "equilibriumQuantity": 22.5,
+          "consumerSurplus": 506.25,
+          "producerSurplus": 506.25,
+          "totalSurplus": 1012.5,
+          "equilibriumPrice_display": "$55.00",
+          "equilibriumQuantity_display": "22.5 units",
+          "demandEquation": "P = 100  -2Q",
+          "supplyEquation": "P = 10 + 2Q"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T11:00:09.997Z",
+      "lastActiveAt": "2026-10-03T11:00:09.999Z"
+    },
+    "sess-supply-demand-1791025310925": {
+      "id": "sess-supply-demand-1791025310925",
+      "templateSlug": "supply-demand",
+      "currentState": {
+        "parameters": {
+          "demandIntercept": 120,
+          "demandSlope": -2,
+          "supplyIntercept": 10,
+          "supplySlope": 1.5
+        },
+        "computed": {
+          "equilibriumPrice": 57.14,
+          "equilibriumQuantity": 31.43,
+          "consumerSurplus": 987.76,
+          "producerSurplus": 740.82,
+          "totalSurplus": 1728.57,
+          "equilibriumPrice_display": "$57.14",
+          "equilibriumQuantity_display": "31.4 units",
+          "demandEquation": "P = 120  -2Q",
+          "supplyEquation": "P = 10 + 1.5Q"
+        }
+      },
+      "history": [
+        {
+          "timestamp": 1791025334321,
+          "parameterChanges": [
+            {
+              "parameter": "demandIntercept",
+              "from": 100,
+              "to": 120
+            }
+          ],
+          "outputs": {
+            "equilibriumPrice": 57.14,
+            "equilibriumQuantity": 31.43,
+            "consumerSurplus": 987.76,
+            "producerSurplus": 740.82,
+            "totalSurplus": 1728.57,
+            "equilibriumPrice_display": "$57.14",
+            "equilibriumQuantity_display": "31.4 units",
+            "demandEquation": "P = 120  -2Q",
+            "supplyEquation": "P = 10 + 1.5Q"
+          }
+        }
+      ],
+      "chatMessages": [
+        {
+          "id": "msg-1791025317169-ck0",
+          "role": "user",
+          "content": "Kenapa harga memengaruhi permintaan?",
+          "context": {
+            "simulation": {
+              "id": "supply_demand",
+              "slug": "supply-demand",
+              "title": "Supply & Demand",
+              "domain": "Economics",
+              "engine": "economics",
+              "description": "Explore how supply and demand curves determine market equilibrium."
+            },
+            "state": {
+              "parameters": {
+                "demandIntercept": 100,
+                "demandSlope": -2,
+                "supplyIntercept": 10,
+                "supplySlope": 1.5
+              },
+              "computed": {
+                "equilibriumPrice": 48.57,
+                "equilibriumQuantity": 25.71,
+                "consumerSurplus": 661.22,
+                "producerSurplus": 495.92,
+                "totalSurplus": 1157.14,
+                "equilibriumPrice_display": "$48.57",
+                "equilibriumQuantity_display": "25.7 units",
+                "demandEquation": "P = 100  -2Q",
+                "supplyEquation": "P = 10 + 1.5Q"
+              }
+            },
+            "experiment": {
+              "challengeId": "shift-demand",
+              "title": "Demand Shock",
+              "objective": "Increase equilibrium price to at least $60.00.",
+              "isCompleted": false,
+              "targetCondition": {
+                "output": "equilibriumPrice",
+                "operator": ">=",
+                "value": 60,
+                "tolerance": 0.5
+              }
+            },
+            "history": []
+          },
+          "timestamp": "2026-10-03T11:01:57.169Z"
+        },
+        {
+          "id": "msg-1791025317172-8me",
+          "role": "assistant",
+          "content": "Hukum permintaan menyatakan hubungan berbanding terbalik antara harga dan kuantitas yang diminta (kemiringan kurva negatif). Ketika harga barang meningkat, konsumen cenderung mengurangi konsumsi atau mencari barang pengganti/substitusi (efek substitusi) serta daya beli riil mereka menurun (efek pendapatan), sehingga kuantitas barang yang diminta berkurang.",
+          "timestamp": "2026-10-03T11:01:57.172Z"
+        },
+        {
+          "id": "msg-1791025321398-vdx",
+          "role": "user",
+          "content": "Kasih aku tantangan!",
+          "context": {
+            "simulation": {
+              "id": "supply_demand",
+              "slug": "supply-demand",
+              "title": "Supply & Demand",
+              "domain": "Economics",
+              "engine": "economics",
+              "description": "Explore how supply and demand curves determine market equilibrium."
+            },
+            "state": {
+              "parameters": {
+                "demandIntercept": 100,
+                "demandSlope": -2,
+                "supplyIntercept": 10,
+                "supplySlope": 1.5
+              },
+              "computed": {
+                "equilibriumPrice": 48.57,
+                "equilibriumQuantity": 25.71,
+                "consumerSurplus": 661.22,
+                "producerSurplus": 495.92,
+                "totalSurplus": 1157.14,
+                "equilibriumPrice_display": "$48.57",
+                "equilibriumQuantity_display": "25.7 units",
+                "demandEquation": "P = 100  -2Q",
+                "supplyEquation": "P = 10 + 1.5Q"
+              }
+            },
+            "experiment": {
+              "challengeId": "shift-demand",
+              "title": "Demand Shock",
+              "objective": "Increase equilibrium price to at least $60.00.",
+              "isCompleted": false,
+              "targetCondition": {
+                "output": "equilibriumPrice",
+                "operator": ">=",
+                "value": 60,
+                "tolerance": 0.5
+              }
+            },
+            "history": []
+          },
+          "timestamp": "2026-10-03T11:02:01.398Z"
+        },
+        {
+          "id": "msg-1791025321400-gh7",
+          "role": "assistant",
+          "content": "TANTANGAN PASAR: Geser kurva permintaan atau penawaran untuk mencapai harga ekuilibrium P* ≥ $60.0.",
+          "action": {
+            "type": "start_challenge",
+            "label": "MULAI TANTANGAN: P* ≥ $60",
+            "challenge": {
+              "id": "ai-gen-target-p60",
+              "title": "Keseimbangan Pasar P* ≥ $60",
+              "objective": "Capai harga ekuilibrium pasar P* ≥ $60.",
+              "description": "Ubah batas kurva permintaan atau penawaran untuk memindahkan titik ekuilibrium pasar ke harga P* ≥ $60.",
+              "allowedParameters": [
+                "demandIntercept",
+                "supplyIntercept"
+              ],
+              "targetCondition": {
+                "output": "equilibriumPrice",
+                "operator": ">=",
+                "value": 60,
+                "tolerance": 1
+              }
+            }
+          },
+          "timestamp": "2026-10-03T11:02:01.400Z"
+        },
+        {
+          "id": "msg-1791025328234-y4i",
+          "role": "user",
+          "content": "Kenapa harga memengaruhi permintaan?",
+          "context": {
+            "simulation": {
+              "id": "supply_demand",
+              "slug": "supply-demand",
+              "title": "Supply & Demand",
+              "domain": "Economics",
+              "engine": "economics",
+              "description": "Explore how supply and demand curves determine market equilibrium."
+            },
+            "state": {
+              "parameters": {
+                "demandIntercept": 100,
+                "demandSlope": -2,
+                "supplyIntercept": 10,
+                "supplySlope": 1.5
+              },
+              "computed": {
+                "equilibriumPrice": 48.57,
+                "equilibriumQuantity": 25.71,
+                "consumerSurplus": 661.22,
+                "producerSurplus": 495.92,
+                "totalSurplus": 1157.14,
+                "equilibriumPrice_display": "$48.57",
+                "equilibriumQuantity_display": "25.7 units",
+                "demandEquation": "P = 100  -2Q",
+                "supplyEquation": "P = 10 + 1.5Q"
+              }
+            },
+            "experiment": {
+              "challengeId": "ai-gen-target-p60",
+              "title": "Keseimbangan Pasar P* ≥ $60",
+              "objective": "Capai harga ekuilibrium pasar P* ≥ $60.",
+              "isCompleted": false,
+              "targetCondition": {
+                "output": "equilibriumPrice",
+                "operator": ">=",
+                "value": 60,
+                "tolerance": 1
+              }
+            },
+            "history": []
+          },
+          "timestamp": "2026-10-03T11:02:08.234Z"
+        },
+        {
+          "id": "msg-1791025328237-ibm",
+          "role": "assistant",
+          "content": "Hukum permintaan menyatakan hubungan berbanding terbalik antara harga dan kuantitas yang diminta (kemiringan kurva negatif). Ketika harga barang meningkat, konsumen cenderung mengurangi konsumsi atau mencari barang pengganti/substitusi (efek substitusi) serta daya beli riil mereka menurun (efek pendapatan), sehingga kuantitas barang yang diminta berkurang.",
+          "timestamp": "2026-10-03T11:02:08.237Z"
+        },
+        {
+          "id": "msg-1791025329081-lfb",
+          "role": "user",
+          "content": "Kalau kurva permintaan bergeser ke kanan apa dampaknya?",
+          "context": {
+            "simulation": {
+              "id": "supply_demand",
+              "slug": "supply-demand",
+              "title": "Supply & Demand",
+              "domain": "Economics",
+              "engine": "economics",
+              "description": "Explore how supply and demand curves determine market equilibrium."
+            },
+            "state": {
+              "parameters": {
+                "demandIntercept": 100,
+                "demandSlope": -2,
+                "supplyIntercept": 10,
+                "supplySlope": 1.5
+              },
+              "computed": {
+                "equilibriumPrice": 48.57,
+                "equilibriumQuantity": 25.71,
+                "consumerSurplus": 661.22,
+                "producerSurplus": 495.92,
+                "totalSurplus": 1157.14,
+                "equilibriumPrice_display": "$48.57",
+                "equilibriumQuantity_display": "25.7 units",
+                "demandEquation": "P = 100  -2Q",
+                "supplyEquation": "P = 10 + 1.5Q"
+              }
+            },
+            "experiment": {
+              "challengeId": "ai-gen-target-p60",
+              "title": "Keseimbangan Pasar P* ≥ $60",
+              "objective": "Capai harga ekuilibrium pasar P* ≥ $60.",
+              "isCompleted": false,
+              "targetCondition": {
+                "output": "equilibriumPrice",
+                "operator": ">=",
+                "value": 60,
+                "tolerance": 1
+              }
+            },
+            "history": []
+          },
+          "timestamp": "2026-10-03T11:02:09.081Z"
+        },
+        {
+          "id": "msg-1791025329083-0tp",
+          "role": "assistant",
+          "content": "PREDIKSI WHAT-IF:\nJika batas harga permintaan dinaikkan dari $100 menjadi $120 (kurva permintaan bergeser ke kanan atas):\n\nEkuilibrium baru akan tercapai pada:\n• Harga pasar P* naik dari $49 menjadi $57\n• Kuantitas barang beredar Q* naik dari 25.7 menjadi 31.4 unit.\n\nHal ini menunjukkan bahwa peningkatan minat atau daya beli konsumen akan mendongkrak harga sekaligus mendorong produsen memproduksi lebih banyak.",
+          "action": {
+            "type": "set_parameters",
+            "label": "TERAPKAN PERUBAHAN: PERMINTAAN +20",
+            "parameters": {
+              "demandIntercept": 120
+            },
+            "preview": {
+              "parameter": "Demand Intercept",
+              "from": "$100",
+              "to": "$120",
+              "predictedOutput": "P* = $57, Q* = 31.4"
+            }
+          },
+          "timestamp": "2026-10-03T11:02:09.083Z"
+        },
+        {
+          "id": "msg-1791025339616-4aw",
+          "role": "user",
+          "content": "APJOR",
+          "context": {
+            "simulation": {
+              "id": "supply_demand",
+              "slug": "supply-demand",
+              "title": "Supply & Demand",
+              "domain": "Economics",
+              "engine": "economics",
+              "description": "Explore how supply and demand curves determine market equilibrium."
+            },
+            "state": {
+              "parameters": {
+                "demandIntercept": 120,
+                "demandSlope": -2,
+                "supplyIntercept": 10,
+                "supplySlope": 1.5
+              },
+              "computed": {
+                "equilibriumPrice": 57.14,
+                "equilibriumQuantity": 31.43,
+                "consumerSurplus": 987.76,
+                "producerSurplus": 740.82,
+                "totalSurplus": 1728.57,
+                "equilibriumPrice_display": "$57.14",
+                "equilibriumQuantity_display": "31.4 units",
+                "demandEquation": "P = 120  -2Q",
+                "supplyEquation": "P = 10 + 1.5Q"
+              }
+            },
+            "experiment": {
+              "challengeId": "ai-gen-target-p60",
+              "title": "Keseimbangan Pasar P* ≥ $60",
+              "objective": "Capai harga ekuilibrium pasar P* ≥ $60.",
+              "isCompleted": false,
+              "targetCondition": {
+                "output": "equilibriumPrice",
+                "operator": ">=",
+                "value": 60,
+                "tolerance": 1
+              }
+            },
+            "history": [
+              {
+                "parameterChanges": [
+                  {
+                    "parameter": "demandIntercept",
+                    "from": 100,
+                    "to": 120
+                  }
+                ],
+                "outputs": {
+                  "equilibriumPrice": 57.14,
+                  "equilibriumQuantity": 31.43,
+                  "consumerSurplus": 987.76,
+                  "producerSurplus": 740.82,
+                  "totalSurplus": 1728.57,
+                  "equilibriumPrice_display": "$57.14",
+                  "equilibriumQuantity_display": "31.4 units",
+                  "demandEquation": "P = 120  -2Q",
+                  "supplyEquation": "P = 10 + 1.5Q"
+                },
+                "timestamp": 1791025333675
+              }
+            ]
+          },
+          "timestamp": "2026-10-03T11:02:19.616Z"
+        },
+        {
+          "id": "msg-1791025339619-d1r",
+          "role": "assistant",
+          "content": "Hukum permintaan menyatakan bahwa ketika harga naik, jumlah barang yang diminta akan menurun (kemiringan kurva negatif). Titik keseimbangan pasar tercapai saat kurva Permintaan berpotongan dengan Penawaran pada harga ekuilibrium P* = $57.14, di mana jumlah permintaan dan penawaran berimbang di Q* = 31.43 unit.",
+          "timestamp": "2026-10-03T11:02:19.619Z"
+        },
+        {
+          "id": "msg-1791025345866-f12",
+          "role": "user",
+          "content": "?",
+          "context": {
+            "simulation": {
+              "id": "supply_demand",
+              "slug": "supply-demand",
+              "title": "Supply & Demand",
+              "domain": "Economics",
+              "engine": "economics",
+              "description": "Explore how supply and demand curves determine market equilibrium."
+            },
+            "state": {
+              "parameters": {
+                "demandIntercept": 120,
+                "demandSlope": -2,
+                "supplyIntercept": 10,
+                "supplySlope": 1.5
+              },
+              "computed": {
+                "equilibriumPrice": 57.14,
+                "equilibriumQuantity": 31.43,
+                "consumerSurplus": 987.76,
+                "producerSurplus": 740.82,
+                "totalSurplus": 1728.57,
+                "equilibriumPrice_display": "$57.14",
+                "equilibriumQuantity_display": "31.4 units",
+                "demandEquation": "P = 120  -2Q",
+                "supplyEquation": "P = 10 + 1.5Q"
+              }
+            },
+            "experiment": {
+              "challengeId": "ai-gen-target-p60",
+              "title": "Keseimbangan Pasar P* ≥ $60",
+              "objective": "Capai harga ekuilibrium pasar P* ≥ $60.",
+              "isCompleted": false,
+              "targetCondition": {
+                "output": "equilibriumPrice",
+                "operator": ">=",
+                "value": 60,
+                "tolerance": 1
+              }
+            },
+            "history": [
+              {
+                "parameterChanges": [
+                  {
+                    "parameter": "demandIntercept",
+                    "from": 100,
+                    "to": 120
+                  }
+                ],
+                "outputs": {
+                  "equilibriumPrice": 57.14,
+                  "equilibriumQuantity": 31.43,
+                  "consumerSurplus": 987.76,
+                  "producerSurplus": 740.82,
+                  "totalSurplus": 1728.57,
+                  "equilibriumPrice_display": "$57.14",
+                  "equilibriumQuantity_display": "31.4 units",
+                  "demandEquation": "P = 120  -2Q",
+                  "supplyEquation": "P = 10 + 1.5Q"
+                },
+                "timestamp": 1791025333675
+              }
+            ]
+          },
+          "timestamp": "2026-10-03T11:02:25.866Z"
+        },
+        {
+          "id": "msg-1791025345868-cgg",
+          "role": "assistant",
+          "content": "Hukum permintaan menyatakan bahwa ketika harga naik, jumlah barang yang diminta akan menurun (kemiringan kurva negatif). Titik keseimbangan pasar tercapai saat kurva Permintaan berpotongan dengan Penawaran pada harga ekuilibrium P* = $57.14, di mana jumlah permintaan dan penawaran berimbang di Q* = 31.43 unit.",
+          "timestamp": "2026-10-03T11:02:25.868Z"
+        }
+      ],
+      "startedAt": "2026-10-03T11:01:51.631Z",
+      "lastActiveAt": "2026-10-03T11:02:25.869Z"
+    },
+    "sess-function-explorer-1791025386133": {
+      "id": "sess-function-explorer-1791025386133",
+      "templateSlug": "function-explorer",
+      "currentState": {
+        "parameters": {
+          "a": -3.9,
+          "b": 0,
+          "c": 0,
+          "xMin": -10,
+          "xMax": 10
+        },
+        "computed": {
+          "discriminant": 0,
+          "vertexX": 0,
+          "vertexY": 0,
+          "roots": "x = 0.00 (double)",
+          "direction": "Opens downward",
+          "equation": "f(x) = -3.9x² + 0x + 0",
+          "yIntercept": 0
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T11:03:06.809Z",
+      "lastActiveAt": "2026-10-03T11:03:12.814Z"
+    },
+    "sess-vector-math-1791025759350": {
+      "id": "sess-vector-math-1791025759350",
+      "templateSlug": "vector-math",
+      "currentState": {
+        "parameters": {
+          "ax": 4,
+          "ay": 3,
+          "bx": 2,
+          "by": 5
+        },
+        "computed": {
+          "rx": 6,
+          "ry": 8,
+          "magA": 5,
+          "magB": 5.39,
+          "magR": 10,
+          "dotProduct": 23,
+          "angleDegR": 53,
+          "magR_display": "10.00 unit",
+          "dotProduct_display": "23",
+          "resultant_vector": "R = (6i + 8j)",
+          "equation": "|R| = √(6² + 8²) = 10.00"
+        }
+      },
+      "history": [
+        {
+          "timestamp": 1791025778012,
+          "parameterChanges": [
+            {
+              "parameter": "by",
+              "from": -5,
+              "to": -4
+            }
+          ],
+          "outputs": {
+            "rx": 1,
+            "ry": -1,
+            "magA": 3.16,
+            "magB": 4.47,
+            "magR": 1.41,
+            "dotProduct": -14,
+            "angleDegR": 315,
+            "magR_display": "1.41 unit",
+            "dotProduct_display": "-14",
+            "resultant_vector": "R = (1i + -1j)",
+            "equation": "|R| = √(1² + -1²) = 1.41"
+          }
+        },
+        {
+          "timestamp": 1791025780272,
+          "parameterChanges": [
+            {
+              "parameter": "by",
+              "from": -5,
+              "to": -4
+            }
+          ],
+          "outputs": {
+            "rx": 6,
+            "ry": 8,
+            "magA": 5,
+            "magB": 5.39,
+            "magR": 10,
+            "dotProduct": 23,
+            "angleDegR": 53,
+            "magR_display": "10.00 unit",
+            "dotProduct_display": "23",
+            "resultant_vector": "R = (6i + 8j)",
+            "equation": "|R| = √(6² + 8²) = 10.00"
+          }
+        }
+      ],
+      "chatMessages": [
+        {
+          "id": "msg-1791025771455-fur",
+          "role": "user",
+          "content": "Beri aku tantangan eksperimen",
+          "context": {
+            "simulation": {
+              "id": "vector_math",
+              "slug": "vector-math",
+              "title": "Operasi Vektor 2D",
+              "domain": "Matematika",
+              "engine": "mathematics",
+              "description": "Visualisasi penjumlahan vektor, peruraian komponen kartesius X-Y, perhitungan magnitudo, sudut resultan, dan perkalian skalar titik (dot product)."
+            },
+            "state": {
+              "parameters": {
+                "ax": -1,
+                "ay": 3,
+                "bx": 2,
+                "by": 5
+              },
+              "computed": {
+                "rx": 1,
+                "ry": 8,
+                "magA": 3.16,
+                "magB": 5.39,
+                "magR": 8.06,
+                "dotProduct": 13,
+                "angleDegR": 83,
+                "magR_display": "8.06 unit",
+                "dotProduct_display": "13",
+                "resultant_vector": "R = (1i + 8j)",
+                "equation": "|R| = √(1² + 8²) = 8.06"
+              }
+            },
+            "experiment": {
+              "challengeId": "reach-resultant-10",
+              "title": "Target Magnitudo Resultan 10",
+              "objective": "Bentuk vektor resultan dengan panjang magnitudo tepat 10.0 unit.",
+              "isCompleted": false,
+              "targetCondition": {
+                "output": "magR",
+                "operator": "==",
+                "value": 10,
+                "tolerance": 0.1
+              }
+            },
+            "history": []
+          },
+          "timestamp": "2026-10-03T11:09:31.455Z"
+        },
+        {
+          "id": "msg-1791025771458-pge",
+          "role": "assistant",
+          "content": "Operasi vektor melibatkan komponen arah dan magnitudo. Perkalian titik (dot product) A · B = Ax·Bx + Ay·By saat ini bernilai 13. Jika dot product bernilai 0, maka kedua vektor tegak lurus (ortogonal, sudut 90°). Resultan vektor R = A + B memiliki panjang magnitudo 8.06 unit.",
+          "timestamp": "2026-10-03T11:09:31.458Z"
+        }
+      ],
+      "startedAt": "2026-10-03T11:09:20.046Z",
+      "lastActiveAt": "2026-10-03T11:09:40.272Z"
+    },
+    "sess-vector-math-1791025920512": {
+      "id": "sess-vector-math-1791025920512",
+      "templateSlug": "vector-math",
+      "currentState": {
+        "parameters": {
+          "ax": 3,
+          "ay": 3,
+          "bx": 2,
+          "by": 5
+        },
+        "computed": {
+          "rx": 5,
+          "ry": 8,
+          "magA": 4.24,
+          "magB": 5.39,
+          "magR": 9.43,
+          "dotProduct": 21,
+          "angleDegR": 58,
+          "magR_display": "9.43 unit",
+          "dotProduct_display": "21",
+          "resultant_vector": "R = (5i + 8j)",
+          "equation": "|R| = √(5² + 8²) = 9.43"
+        }
+      },
+      "history": [
+        {
+          "timestamp": 1791025921230,
+          "parameterChanges": [
+            {
+              "parameter": "by",
+              "from": -5,
+              "to": -4
+            }
+          ],
+          "outputs": {
+            "rx": 6,
+            "ry": 8,
+            "magA": 5,
+            "magB": 5.39,
+            "magR": 10,
+            "dotProduct": 23,
+            "angleDegR": 53,
+            "magR_display": "10.00 unit",
+            "dotProduct_display": "23",
+            "resultant_vector": "R = (6i + 8j)",
+            "equation": "|R| = √(6² + 8²) = 10.00"
+          }
+        },
+        {
+          "timestamp": 1791025925638,
+          "parameterChanges": [
+            {
+              "parameter": "ax",
+              "from": 4,
+              "to": 3
+            }
+          ],
+          "outputs": {
+            "rx": 5,
+            "ry": 8,
+            "magA": 4.24,
+            "magB": 5.39,
+            "magR": 9.43,
+            "dotProduct": 21,
+            "angleDegR": 58,
+            "magR_display": "9.43 unit",
+            "dotProduct_display": "21",
+            "resultant_vector": "R = (5i + 8j)",
+            "equation": "|R| = √(5² + 8²) = 9.43"
+          }
+        }
+      ],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T11:12:01.223Z",
+      "lastActiveAt": "2026-10-03T11:12:05.638Z"
+    },
+    "sess-function-explorer-1791026066790": {
+      "id": "sess-function-explorer-1791026066790",
+      "templateSlug": "function-explorer",
+      "currentState": {
+        "parameters": {
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "xMin": -10,
+          "xMax": 10
+        },
+        "computed": {
+          "discriminant": 0,
+          "vertexX": 0,
+          "vertexY": 0,
+          "roots": "x = 0.00 (double)",
+          "direction": "Opens upward",
+          "equation": "f(x) = x² + 0x + 0",
+          "yIntercept": 0
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T11:14:27.465Z",
+      "lastActiveAt": "2026-10-03T11:14:44.544Z"
+    },
+    "sess-1791028416451-at8q": {
+      "id": "sess-1791028416451-at8q",
+      "templateSlug": "vector-math",
+      "currentState": {
+        "parameters": {
+          "ax": -10,
+          "ay": 3,
+          "bx": 2,
+          "by": 5
+        },
+        "computed": {
+          "rx": -8,
+          "ry": 8,
+          "magA": 10.44,
+          "magB": 5.39,
+          "magR": 11.31,
+          "dotProduct": -5,
+          "angleDegR": 135,
+          "magR_display": "11.31 unit",
+          "dotProduct_display": "-5",
+          "resultant_vector": "R = (-8i + 8j)",
+          "equation": "|R| = √(-8² + 8²) = 11.31"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T11:53:37.087Z",
+      "lastActiveAt": "2026-10-03T11:53:47.268Z"
+    },
+    "sess-1791028433093-dxui": {
+      "id": "sess-1791028433093-dxui",
+      "templateSlug": "vector-math",
+      "currentState": {
+        "parameters": {
+          "ax": 4,
+          "ay": 3,
+          "bx": 2,
+          "by": 5
+        },
+        "computed": {
+          "rx": 6,
+          "ry": 8,
+          "magA": 5,
+          "magB": 5.39,
+          "magR": 10,
+          "dotProduct": 23,
+          "angleDegR": 53,
+          "magR_display": "10.00 unit",
+          "dotProduct_display": "23",
+          "resultant_vector": "R = (6i + 8j)",
+          "equation": "|R| = √(6² + 8²) = 10.00"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T11:53:53.669Z",
+      "lastActiveAt": "2026-10-03T11:53:53.672Z"
+    },
+    "sess-1791028939538-hiw0": {
+      "id": "sess-1791028939538-hiw0",
+      "templateSlug": "function-explorer",
+      "currentState": {
+        "parameters": {
+          "a": 3.7,
+          "b": 0,
+          "c": 0,
+          "xMin": -10,
+          "xMax": 10
+        },
+        "computed": {
+          "discriminant": 0,
+          "vertexX": 0,
+          "vertexY": 0,
+          "roots": "x = 0.00 (double)",
+          "direction": "Opens upward",
+          "equation": "f(x) = 3.7x² + 0x + 0",
+          "yIntercept": 0
+        }
+      },
+      "history": [
+        {
+          "timestamp": 1791028959257,
+          "parameterChanges": [
+            {
+              "parameter": "a",
+              "from": 3.1,
+              "to": 3
+            }
+          ],
+          "outputs": {
+            "discriminant": 0,
+            "vertexX": 0,
+            "vertexY": 0,
+            "roots": "x = 0.00 (double)",
+            "direction": "Opens upward",
+            "equation": "f(x) = 3x² + 0x + 0",
+            "yIntercept": 0
+          }
+        },
+        {
+          "timestamp": 1791028971094,
+          "parameterChanges": [
+            {
+              "parameter": "a",
+              "from": 3.6,
+              "to": 3.7
+            }
+          ],
+          "outputs": {
+            "discriminant": 0,
+            "vertexX": 0,
+            "vertexY": 0,
+            "roots": "x = 0.00 (double)",
+            "direction": "Opens upward",
+            "equation": "f(x) = 3.7x² + 0x + 0",
+            "yIntercept": 0
+          }
+        }
+      ],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T12:02:20.116Z",
+      "lastActiveAt": "2026-10-03T12:02:51.094Z"
+    },
+    "sess-1791029003556-mral": {
+      "id": "sess-1791029003556-mral",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 0.5,
+          "force": 100,
+          "friction": 0
+        },
+        "computed": {
+          "acceleration": 200,
+          "netForce": 100,
+          "frictionForce": 0,
+          "acceleration_display": "200.00 m/s²",
+          "netForce_display": "100.00 N",
+          "equation": "a = F_net / m = 100.0 / 0.5 = 200.00 m/s²"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T12:03:24.166Z",
+      "lastActiveAt": "2026-10-03T12:03:55.976Z"
+    },
+    "sess-1791030170329-8l8k": {
+      "id": "sess-1791030170329-8l8k",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5,
+          "force": 20,
+          "friction": 0
+        },
+        "computed": {
+          "acceleration": 4,
+          "netForce": 20,
+          "frictionForce": 0,
+          "acceleration_display": "4.00 m/s²",
+          "netForce_display": "20.00 N",
+          "equation": "a = F_net / m = 20.0 / 5.0 = 4.00 m/s²"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T12:22:50.913Z",
+      "lastActiveAt": "2026-10-03T12:22:50.915Z"
+    },
+    "sess-1791030428861-m8eb": {
+      "id": "sess-1791030428861-m8eb",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 20,
+          "force": 100,
+          "friction": 0
+        },
+        "computed": {
+          "acceleration": 5,
+          "netForce": 100,
+          "frictionForce": 0,
+          "acceleration_display": "5.00 m/s²",
+          "netForce_display": "100.00 N",
+          "equation": "a = F_net / m = 100.0 / 20.0 = 5.00 m/s²"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T12:27:09.420Z",
+      "lastActiveAt": "2026-10-03T12:28:17.268Z"
+    },
+    "sess-1791030661297-qq43": {
+      "id": "sess-1791030661297-qq43",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5,
+          "force": 20,
+          "friction": 0
+        },
+        "computed": {
+          "acceleration": 4,
+          "netForce": 20,
+          "frictionForce": 0,
+          "acceleration_display": "4.00 m/s²",
+          "netForce_display": "20.00 N",
+          "equation": "a = F_net / m = 20.0 / 5.0 = 4.00 m/s²"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T12:31:01.863Z",
+      "lastActiveAt": "2026-10-03T12:31:01.867Z"
+    },
+    "sess-1791030717291-aqip": {
+      "id": "sess-1791030717291-aqip",
+      "templateSlug": "vector-math",
+      "currentState": {
+        "parameters": {
+          "ax": 4,
+          "ay": 3,
+          "bx": 2,
+          "by": 5
+        },
+        "computed": {
+          "rx": 6,
+          "ry": 8,
+          "magA": 5,
+          "magB": 5.39,
+          "magR": 10,
+          "dotProduct": 23,
+          "angleDegR": 53,
+          "magR_display": "10.00 unit",
+          "dotProduct_display": "23",
+          "resultant_vector": "R = (6i + 8j)",
+          "equation": "|R| = √(6² + 8²) = 10.00"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T12:31:57.873Z",
+      "lastActiveAt": "2026-10-03T12:31:57.876Z"
+    },
+    "sess-1791030898454-x37u": {
+      "id": "sess-1791030898454-x37u",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "xMin": -10,
+          "xMax": 10
+        },
+        "computed": {
+          "discriminant": 0,
+          "vertexX": 0,
+          "vertexY": 0,
+          "roots": "x = 0.00 (double)",
+          "direction": "Opens upward",
+          "equation": "f(x) = x² + 0x + 0",
+          "yIntercept": 0
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T12:34:59.100Z",
+      "lastActiveAt": "2026-10-03T12:35:04.114Z"
+    },
+    "sess-1791032199050-suvh": {
+      "id": "sess-1791032199050-suvh",
+      "templateSlug": "function-explorer",
+      "currentState": {
+        "parameters": {
+          "a": -5,
+          "b": 0,
+          "c": 0,
+          "xMin": -10,
+          "xMax": 10
+        },
+        "computed": {
+          "discriminant": 0,
+          "vertexX": 0,
+          "vertexY": 0,
+          "roots": "x = 0.00 (double)",
+          "direction": "Opens downward",
+          "equation": "f(x) = -5x² + 0x + 0",
+          "yIntercept": 0
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T12:56:39.633Z",
+      "lastActiveAt": "2026-10-03T12:56:43.088Z"
+    },
+    "sess-1791032544293-zfgw": {
+      "id": "sess-1791032544293-zfgw",
+      "templateSlug": "function-explorer",
+      "currentState": {
+        "parameters": {
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "xMin": -10,
+          "xMax": 10
+        },
+        "computed": {
+          "discriminant": 0,
+          "vertexX": 0,
+          "vertexY": 0,
+          "roots": "x = 0.00 (double)",
+          "direction": "Opens upward",
+          "equation": "f(x) = x² + 0x + 0",
+          "yIntercept": 0
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T13:02:24.867Z",
+      "lastActiveAt": "2026-10-03T13:02:24.870Z"
+    },
+    "sess-1791032546326-5b5w": {
+      "id": "sess-1791032546326-5b5w",
+      "templateSlug": "function-explorer",
+      "currentState": {
+        "parameters": {
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "xMin": -10,
+          "xMax": 10
+        },
+        "computed": {
+          "discriminant": 0,
+          "vertexX": 0,
+          "vertexY": 0,
+          "roots": "x = 0.00 (double)",
+          "direction": "Opens upward",
+          "equation": "f(x) = x² + 0x + 0",
+          "yIntercept": 0
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T13:02:26.889Z",
+      "lastActiveAt": "2026-10-03T13:02:26.892Z"
+    },
+    "sess-1791032547306-a3o6": {
+      "id": "sess-1791032547306-a3o6",
+      "templateSlug": "function-explorer",
+      "currentState": {
+        "parameters": {
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "xMin": -10,
+          "xMax": 10
+        },
+        "computed": {
+          "discriminant": 0,
+          "vertexX": 0,
+          "vertexY": 0,
+          "roots": "x = 0.00 (double)",
+          "direction": "Opens upward",
+          "equation": "f(x) = x² + 0x + 0",
+          "yIntercept": 0
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T13:02:27.859Z",
+      "lastActiveAt": "2026-10-03T13:02:27.862Z"
+    },
+    "sess-1791033167269-6pgj": {
+      "id": "sess-1791033167269-6pgj",
+      "templateSlug": "ph-scale",
+      "currentState": {
+        "parameters": {
+          "logHConc": -7,
+          "solutionVolume": 1
+        },
+        "computed": {
+          "pH": 7,
+          "pOH": 7,
+          "solutionVolume": 1,
+          "nature": "Netral (Air Murni)",
+          "indicatorColor": "#4b8f8c",
+          "pH_display": "pH 7.00",
+          "pOH_display": "pOH 7.00",
+          "nature_display": "Netral (Air Murni)",
+          "equation": "pH = -log₁₀[H⁺] = 7.00 (pH + pOH = 14.0)"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T13:12:47.853Z",
+      "lastActiveAt": "2026-10-03T13:12:47.856Z"
+    },
+    "sess-1791034612284-ncvv": {
+      "id": "sess-1791034612284-ncvv",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5,
+          "force": 20,
+          "friction": 0
+        },
+        "computed": {
+          "acceleration": 4,
+          "netForce": 20,
+          "frictionForce": 0,
+          "acceleration_display": "4.00 m/s²",
+          "netForce_display": "20.00 N",
+          "equation": "a = F_net / m = 20.0 / 5.0 = 4.00 m/s²"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T13:36:52.887Z",
+      "lastActiveAt": "2026-10-03T13:37:12.945Z"
+    },
+    "sess-1791035372454-t69a": {
+      "id": "sess-1791035372454-t69a",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5,
+          "force": 20,
+          "friction": 0
+        },
+        "computed": {
+          "acceleration": 4,
+          "netForce": 20,
+          "frictionForce": 0,
+          "acceleration_display": "4.00 m/s²",
+          "netForce_display": "20.00 N",
+          "equation": "a = F_net / m = 20.0 / 5.0 = 4.00 m/s²"
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T13:49:33.047Z",
+      "lastActiveAt": "2026-10-03T13:49:33.050Z"
+    },
+    "sess-1791036076904-ju7v": {
+      "id": "sess-1791036076904-ju7v",
+      "templateSlug": "function-explorer",
+      "currentState": {
+        "parameters": {
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "xMin": -10,
+          "xMax": 10
+        },
+        "computed": {
+          "discriminant": 0,
+          "vertexX": 0,
+          "vertexY": 0,
+          "roots": "x = 0.00 (double)",
+          "direction": "Opens upward",
+          "equation": "f(x) = x² + 0x + 0",
+          "yIntercept": 0
+        }
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-03T14:01:17.516Z",
+      "lastActiveAt": "2026-10-03T14:01:17.519Z"
+    },
+    "ses-newtons-second-law-1791121896153": {
+      "id": "ses-newtons-second-law-1791121896153",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "mass": 5,
+            "force": 20,
+            "friction": 0
+          },
+          "computed": {
+            "acceleration": 4,
+            "netForce": 20,
+            "frictionForce": 0,
+            "acceleration_display": "4.00 m/s²",
+            "netForce_display": "20.00 N",
+            "equation": "a = F_net / m = 20.0 / 5.0 = 4.00 m/s²"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:51:36.153Z",
+      "lastActiveAt": "2026-10-04T13:51:36.153Z"
+    },
+    "ses-newtons-second-law-1791121903119": {
+      "id": "ses-newtons-second-law-1791121903119",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "mass": 5,
+            "force": 20,
+            "friction": 0
+          },
+          "computed": {
+            "acceleration": 4,
+            "netForce": 20,
+            "frictionForce": 0,
+            "acceleration_display": "4.00 m/s²",
+            "netForce_display": "20.00 N",
+            "equation": "a = F_net / m = 20.0 / 5.0 = 4.00 m/s²"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:51:43.119Z",
+      "lastActiveAt": "2026-10-04T13:51:43.119Z"
+    },
+    "ses-newtons-second-law-1791121907947": {
+      "id": "ses-newtons-second-law-1791121907947",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "mass": 9,
+            "force": 20,
+            "friction": 0
+          },
+          "computed": {
+            "acceleration": 2.222,
+            "netForce": 20,
+            "frictionForce": 0,
+            "acceleration_display": "2.22 m/s²",
+            "netForce_display": "20.00 N",
+            "equation": "a = F_net / m = 20.0 / 9.0 = 2.22 m/s²"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:51:47.947Z",
+      "lastActiveAt": "2026-10-04T13:51:47.947Z"
+    },
+    "ses-newtons-second-law-1791121911921": {
+      "id": "ses-newtons-second-law-1791121911921",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "mass": 9,
+            "force": 86,
+            "friction": 0
+          },
+          "computed": {
+            "acceleration": 9.556,
+            "netForce": 86,
+            "frictionForce": 0,
+            "acceleration_display": "9.56 m/s²",
+            "netForce_display": "86.00 N",
+            "equation": "a = F_net / m = 86.0 / 9.0 = 9.56 m/s²"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:51:51.921Z",
+      "lastActiveAt": "2026-10-04T13:51:51.921Z"
+    },
+    "ses-newtons-second-law-1791121914508": {
+      "id": "ses-newtons-second-law-1791121914508",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "mass": 9,
+            "force": 86,
+            "friction": 0.28
+          },
+          "computed": {
+            "acceleration": 6.809,
+            "netForce": 61.28,
+            "frictionForce": 24.72,
+            "acceleration_display": "6.81 m/s²",
+            "netForce_display": "61.28 N",
+            "equation": "a = F_net / m = 61.3 / 9.0 = 6.81 m/s²"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:51:54.508Z",
+      "lastActiveAt": "2026-10-04T13:51:54.508Z"
+    },
+    "ses-projectile-motion-1791122014246": {
+      "id": "ses-projectile-motion-1791122014246",
+      "templateSlug": "projectile-motion",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "velocity": 25,
+            "angle": 45,
+            "gravity": 9.8
+          },
+          "computed": {
+            "flightTime": 3.61,
+            "range": 63.78,
+            "maxHeight": 15.94,
+            "vx": 17.68,
+            "vy": 17.68,
+            "range_display": "63.8 m",
+            "maxHeight_display": "15.9 m",
+            "flightTime_display": "3.61 s",
+            "equation": "R = (v₀² sin 2θ)/g = 63.8 m"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:53:34.246Z",
+      "lastActiveAt": "2026-10-04T13:53:34.246Z"
+    },
+    "ses-projectile-motion-1791122027221": {
+      "id": "ses-projectile-motion-1791122027221",
+      "templateSlug": "projectile-motion",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "velocity": 27,
+            "angle": 45,
+            "gravity": 9.8
+          },
+          "computed": {
+            "flightTime": 3.9,
+            "range": 74.39,
+            "maxHeight": 18.6,
+            "vx": 19.09,
+            "vy": 19.09,
+            "range_display": "74.4 m",
+            "maxHeight_display": "18.6 m",
+            "flightTime_display": "3.90 s",
+            "equation": "R = (v₀² sin 2θ)/g = 74.4 m"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:53:47.221Z",
+      "lastActiveAt": "2026-10-04T13:53:47.221Z"
+    },
+    "ses-projectile-motion-1791122030488": {
+      "id": "ses-projectile-motion-1791122030488",
+      "templateSlug": "projectile-motion",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "velocity": 27,
+            "angle": 66,
+            "gravity": 9.8
+          },
+          "computed": {
+            "flightTime": 5.03,
+            "range": 55.28,
+            "maxHeight": 31.04,
+            "vx": 10.98,
+            "vy": 24.67,
+            "range_display": "55.3 m",
+            "maxHeight_display": "31.0 m",
+            "flightTime_display": "5.03 s",
+            "equation": "R = (v₀² sin 2θ)/g = 55.3 m"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:53:50.488Z",
+      "lastActiveAt": "2026-10-04T13:53:50.488Z"
+    },
+    "ses-projectile-motion-1791122034355": {
+      "id": "ses-projectile-motion-1791122034355",
+      "templateSlug": "projectile-motion",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "velocity": 27,
+            "angle": 66,
+            "gravity": 10
+          },
+          "computed": {
+            "flightTime": 4.93,
+            "range": 54.18,
+            "maxHeight": 30.42,
+            "vx": 10.98,
+            "vy": 24.67,
+            "range_display": "54.2 m",
+            "maxHeight_display": "30.4 m",
+            "flightTime_display": "4.93 s",
+            "equation": "R = (v₀² sin 2θ)/g = 54.2 m"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:53:54.355Z",
+      "lastActiveAt": "2026-10-04T13:53:54.355Z"
+    },
+    "ses-projectile-motion-1791122272045": {
+      "id": "ses-projectile-motion-1791122272045",
+      "templateSlug": "projectile-motion",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "velocity": 24,
+            "angle": 66,
+            "gravity": 10
+          },
+          "computed": {
+            "flightTime": 4.39,
+            "range": 42.81,
+            "maxHeight": 24.04,
+            "vx": 9.76,
+            "vy": 21.93,
+            "range_display": "42.8 m",
+            "maxHeight_display": "24.0 m",
+            "flightTime_display": "4.39 s",
+            "equation": "R = (v₀² sin 2θ)/g = 42.8 m"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:57:52.045Z",
+      "lastActiveAt": "2026-10-04T13:57:52.045Z"
+    },
+    "ses-projectile-motion-1791122273231": {
+      "id": "ses-projectile-motion-1791122273231",
+      "templateSlug": "projectile-motion",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "velocity": 25,
+            "angle": 45,
+            "gravity": 9.8
+          },
+          "computed": {
+            "flightTime": 3.61,
+            "range": 63.78,
+            "maxHeight": 15.94,
+            "vx": 17.68,
+            "vy": 17.68,
+            "range_display": "63.8 m",
+            "maxHeight_display": "15.9 m",
+            "flightTime_display": "3.61 s",
+            "equation": "R = (v₀² sin 2θ)/g = 63.8 m"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:57:53.231Z",
+      "lastActiveAt": "2026-10-04T13:57:53.231Z"
+    },
+    "ses-projectile-motion-1791122275814": {
+      "id": "ses-projectile-motion-1791122275814",
+      "templateSlug": "projectile-motion",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "velocity": 25,
+            "angle": 10,
+            "gravity": 9.8
+          },
+          "computed": {
+            "flightTime": 0.89,
+            "range": 21.81,
+            "maxHeight": 0.96,
+            "vx": 24.62,
+            "vy": 4.34,
+            "range_display": "21.8 m",
+            "maxHeight_display": "1.0 m",
+            "flightTime_display": "0.89 s",
+            "equation": "R = (v₀² sin 2θ)/g = 21.8 m"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:57:55.814Z",
+      "lastActiveAt": "2026-10-04T13:57:55.814Z"
+    },
+    "ses-projectile-motion-1791122279482": {
+      "id": "ses-projectile-motion-1791122279482",
+      "templateSlug": "projectile-motion",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "velocity": 25,
+            "angle": 85,
+            "gravity": 9.8
+          },
+          "computed": {
+            "flightTime": 5.08,
+            "range": 11.07,
+            "maxHeight": 31.65,
+            "vx": 2.18,
+            "vy": 24.9,
+            "range_display": "11.1 m",
+            "maxHeight_display": "31.6 m",
+            "flightTime_display": "5.08 s",
+            "equation": "R = (v₀² sin 2θ)/g = 11.1 m"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:57:59.482Z",
+      "lastActiveAt": "2026-10-04T13:57:59.482Z"
+    },
+    "ses-projectile-motion-1791122284782": {
+      "id": "ses-projectile-motion-1791122284782",
+      "templateSlug": "projectile-motion",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "velocity": 25,
+            "angle": 62,
+            "gravity": 9.8
+          },
+          "computed": {
+            "flightTime": 4.5,
+            "range": 52.87,
+            "maxHeight": 24.86,
+            "vx": 11.74,
+            "vy": 22.07,
+            "range_display": "52.9 m",
+            "maxHeight_display": "24.9 m",
+            "flightTime_display": "4.50 s",
+            "equation": "R = (v₀² sin 2θ)/g = 52.9 m"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:58:04.782Z",
+      "lastActiveAt": "2026-10-04T13:58:04.782Z"
+    },
+    "ses-projectile-motion-1791122288500": {
+      "id": "ses-projectile-motion-1791122288500",
+      "templateSlug": "projectile-motion",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "velocity": 25,
+            "angle": 33,
+            "gravity": 9.8
+          },
+          "computed": {
+            "flightTime": 2.78,
+            "range": 58.26,
+            "maxHeight": 9.46,
+            "vx": 20.97,
+            "vy": 13.62,
+            "range_display": "58.3 m",
+            "maxHeight_display": "9.5 m",
+            "flightTime_display": "2.78 s",
+            "equation": "R = (v₀² sin 2θ)/g = 58.3 m"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:58:08.500Z",
+      "lastActiveAt": "2026-10-04T13:58:08.500Z"
+    },
+    "ses-projectile-motion-1791122290261": {
+      "id": "ses-projectile-motion-1791122290261",
+      "templateSlug": "projectile-motion",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "velocity": 25,
+            "angle": 56,
+            "gravity": 9.8
+          },
+          "computed": {
+            "flightTime": 4.23,
+            "range": 59.13,
+            "maxHeight": 21.92,
+            "vx": 13.98,
+            "vy": 20.73,
+            "range_display": "59.1 m",
+            "maxHeight_display": "21.9 m",
+            "flightTime_display": "4.23 s",
+            "equation": "R = (v₀² sin 2θ)/g = 59.1 m"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:58:10.262Z",
+      "lastActiveAt": "2026-10-04T13:58:10.262Z"
+    },
+    "ses-projectile-motion-1791122293627": {
+      "id": "ses-projectile-motion-1791122293627",
+      "templateSlug": "projectile-motion",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "velocity": 24,
+            "angle": 56,
+            "gravity": 9.8
+          },
+          "computed": {
+            "flightTime": 4.06,
+            "range": 54.5,
+            "maxHeight": 20.2,
+            "vx": 13.42,
+            "vy": 19.9,
+            "range_display": "54.5 m",
+            "maxHeight_display": "20.2 m",
+            "flightTime_display": "4.06 s",
+            "equation": "R = (v₀² sin 2θ)/g = 54.5 m"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:58:13.627Z",
+      "lastActiveAt": "2026-10-04T13:58:13.627Z"
+    },
+    "ses-projectile-motion-1791122301868": {
+      "id": "ses-projectile-motion-1791122301868",
+      "templateSlug": "projectile-motion",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "velocity": 25,
+            "angle": 45,
+            "gravity": 9.8
+          },
+          "computed": {
+            "flightTime": 3.61,
+            "range": 63.78,
+            "maxHeight": 15.94,
+            "vx": 17.68,
+            "vy": 17.68,
+            "range_display": "63.8 m",
+            "maxHeight_display": "15.9 m",
+            "flightTime_display": "3.61 s",
+            "equation": "R = (v₀² sin 2θ)/g = 63.8 m"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:58:21.868Z",
+      "lastActiveAt": "2026-10-04T13:58:21.868Z"
+    },
+    "ses-vector-math-1791122348854": {
+      "id": "ses-vector-math-1791122348854",
+      "templateSlug": "vector-math",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "ax": 4,
+            "ay": 3,
+            "bx": 2,
+            "by": 5
+          },
+          "computed": {
+            "rx": 6,
+            "ry": 8,
+            "magA": 5,
+            "magB": 5.39,
+            "magR": 10,
+            "dotProduct": 23,
+            "angleDegR": 53,
+            "magR_display": "10.00 unit",
+            "dotProduct_display": "23",
+            "resultant_vector": "R = (6i + 8j)",
+            "equation": "|R| = √(6² + 8²) = 10.00"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:59:08.854Z",
+      "lastActiveAt": "2026-10-04T13:59:08.854Z"
+    },
+    "ses-vector-math-1791122358371": {
+      "id": "ses-vector-math-1791122358371",
+      "templateSlug": "vector-math",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "ax": -8,
+            "ay": 3,
+            "bx": 2,
+            "by": 5
+          },
+          "computed": {
+            "rx": -6,
+            "ry": 8,
+            "magA": 8.54,
+            "magB": 5.39,
+            "magR": 10,
+            "dotProduct": -1,
+            "angleDegR": 127,
+            "magR_display": "10.00 unit",
+            "dotProduct_display": "-1",
+            "resultant_vector": "R = (-6i + 8j)",
+            "equation": "|R| = √(-6² + 8²) = 10.00"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:59:18.371Z",
+      "lastActiveAt": "2026-10-04T13:59:18.371Z"
+    },
+    "ses-vector-math-1791122361173": {
+      "id": "ses-vector-math-1791122361173",
+      "templateSlug": "vector-math",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "ax": -5,
+            "ay": 3,
+            "bx": 2,
+            "by": 5
+          },
+          "computed": {
+            "rx": -3,
+            "ry": 8,
+            "magA": 5.83,
+            "magB": 5.39,
+            "magR": 8.54,
+            "dotProduct": 5,
+            "angleDegR": 111,
+            "magR_display": "8.54 unit",
+            "dotProduct_display": "5",
+            "resultant_vector": "R = (-3i + 8j)",
+            "equation": "|R| = √(-3² + 8²) = 8.54"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:59:21.173Z",
+      "lastActiveAt": "2026-10-04T13:59:21.173Z"
+    },
+    "ses-vector-math-1791122364113": {
+      "id": "ses-vector-math-1791122364113",
+      "templateSlug": "vector-math",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "ax": -5,
+            "ay": -8,
+            "bx": 2,
+            "by": 5
+          },
+          "computed": {
+            "rx": -3,
+            "ry": -3,
+            "magA": 9.43,
+            "magB": 5.39,
+            "magR": 4.24,
+            "dotProduct": -50,
+            "angleDegR": 225,
+            "magR_display": "4.24 unit",
+            "dotProduct_display": "-50",
+            "resultant_vector": "R = (-3i + -3j)",
+            "equation": "|R| = √(-3² + -3²) = 4.24"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:59:24.113Z",
+      "lastActiveAt": "2026-10-04T13:59:24.113Z"
+    },
+    "ses-vector-math-1791122365048": {
+      "id": "ses-vector-math-1791122365048",
+      "templateSlug": "vector-math",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "ax": -5,
+            "ay": -10,
+            "bx": 2,
+            "by": 5
+          },
+          "computed": {
+            "rx": -3,
+            "ry": -5,
+            "magA": 11.18,
+            "magB": 5.39,
+            "magR": 5.83,
+            "dotProduct": -60,
+            "angleDegR": 239,
+            "magR_display": "5.83 unit",
+            "dotProduct_display": "-60",
+            "resultant_vector": "R = (-3i + -5j)",
+            "equation": "|R| = √(-3² + -5²) = 5.83"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:59:25.048Z",
+      "lastActiveAt": "2026-10-04T13:59:25.048Z"
+    },
+    "ses-vector-math-1791122366690": {
+      "id": "ses-vector-math-1791122366690",
+      "templateSlug": "vector-math",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "ax": -5,
+            "ay": 6,
+            "bx": 2,
+            "by": 5
+          },
+          "computed": {
+            "rx": -3,
+            "ry": 11,
+            "magA": 7.81,
+            "magB": 5.39,
+            "magR": 11.4,
+            "dotProduct": 20,
+            "angleDegR": 105,
+            "magR_display": "11.40 unit",
+            "dotProduct_display": "20",
+            "resultant_vector": "R = (-3i + 11j)",
+            "equation": "|R| = √(-3² + 11²) = 11.40"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:59:26.690Z",
+      "lastActiveAt": "2026-10-04T13:59:26.690Z"
+    },
+    "ses-vector-math-1791122370509": {
+      "id": "ses-vector-math-1791122370509",
+      "templateSlug": "vector-math",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "ax": -5,
+            "ay": 6,
+            "bx": 10,
+            "by": 5
+          },
+          "computed": {
+            "rx": 5,
+            "ry": 11,
+            "magA": 7.81,
+            "magB": 11.18,
+            "magR": 12.08,
+            "dotProduct": -20,
+            "angleDegR": 66,
+            "magR_display": "12.08 unit",
+            "dotProduct_display": "-20",
+            "resultant_vector": "R = (5i + 11j)",
+            "equation": "|R| = √(5² + 11²) = 12.08"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:59:30.509Z",
+      "lastActiveAt": "2026-10-04T13:59:30.509Z"
+    },
+    "ses-vector-math-1791122374609": {
+      "id": "ses-vector-math-1791122374609",
+      "templateSlug": "vector-math",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "ax": -5,
+            "ay": 6,
+            "bx": 10,
+            "by": -4
+          },
+          "computed": {
+            "rx": 5,
+            "ry": 2,
+            "magA": 7.81,
+            "magB": 10.77,
+            "magR": 5.39,
+            "dotProduct": -74,
+            "angleDegR": 22,
+            "magR_display": "5.39 unit",
+            "dotProduct_display": "-74",
+            "resultant_vector": "R = (5i + 2j)",
+            "equation": "|R| = √(5² + 2²) = 5.39"
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-04T13:59:34.609Z",
+      "lastActiveAt": "2026-10-04T13:59:34.609Z"
+    },
+    "ses-function-explorer-1791168918902": {
+      "id": "ses-function-explorer-1791168918902",
+      "templateSlug": "function-explorer",
+      "currentState": {
+        "parameters": {
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "xMin": -10,
+          "xMax": 10,
+          "actualValue": 0
+        },
+        "computed": {}
+      },
+      "history": [
+        {
+          "timestamp": 1791168918907,
+          "parameterChanges": [
+            {
+              "parameter": "experiment_status",
+              "from": 0,
+              "to": 1
+            }
+          ],
+          "outputs": {}
+        }
+      ],
+      "chatMessages": [],
+      "startedAt": "2026-10-05T02:55:18.902Z",
+      "lastActiveAt": "2026-10-05T02:55:18.907Z"
+    },
+    "ses-function-explorer-1791168918975": {
+      "id": "ses-function-explorer-1791168918975",
+      "templateSlug": "function-explorer",
+      "currentState": {
+        "parameters": {
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "xMin": -10,
+          "xMax": 10,
+          "actualValue": 0
+        },
+        "computed": {}
+      },
+      "history": [
+        {
+          "timestamp": 1791168918980,
+          "parameterChanges": [
+            {
+              "parameter": "experiment_status",
+              "from": 0,
+              "to": 1
+            }
+          ],
+          "outputs": {}
+        }
+      ],
+      "chatMessages": [],
+      "startedAt": "2026-10-05T02:55:18.975Z",
+      "lastActiveAt": "2026-10-05T02:55:18.980Z"
+    },
+    "ses-function-explorer-1791168919072": {
+      "id": "ses-function-explorer-1791168919072",
+      "templateSlug": "function-explorer",
+      "currentState": {
+        "parameters": {
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "xMin": -10,
+          "xMax": 10,
+          "actualValue": 0
+        },
+        "computed": {}
+      },
+      "history": [
+        {
+          "timestamp": 1791168919079,
+          "parameterChanges": [
+            {
+              "parameter": "experiment_status",
+              "from": 0,
+              "to": 1
+            }
+          ],
+          "outputs": {}
+        }
+      ],
+      "chatMessages": [],
+      "startedAt": "2026-10-05T02:55:19.072Z",
+      "lastActiveAt": "2026-10-05T02:55:19.079Z"
+    },
+    "ses-function-explorer-1791168919125": {
+      "id": "ses-function-explorer-1791168919125",
+      "templateSlug": "function-explorer",
+      "currentState": {
+        "parameters": {
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "xMin": -10,
+          "xMax": 10,
+          "actualValue": 0
+        },
+        "computed": {}
+      },
+      "history": [
+        {
+          "timestamp": 1791168919129,
+          "parameterChanges": [
+            {
+              "parameter": "experiment_status",
+              "from": 0,
+              "to": 1
+            }
+          ],
+          "outputs": {}
+        }
+      ],
+      "chatMessages": [],
+      "startedAt": "2026-10-05T02:55:19.125Z",
+      "lastActiveAt": "2026-10-05T02:55:19.129Z"
+    },
+    "ses-function-explorer-1791168919492": {
+      "id": "ses-function-explorer-1791168919492",
+      "templateSlug": "function-explorer",
+      "currentState": {
+        "parameters": {
+          "parameters": {
+            "a": 1,
+            "b": 0,
+            "c": 0,
+            "xMin": -10,
+            "xMax": 10
+          },
+          "computed": {
+            "discriminant": 0,
+            "vertexX": 0,
+            "vertexY": 0,
+            "roots": "x = 0.00 (double)",
+            "direction": "Opens upward",
+            "equation": "f(x) = x² + 0x + 0",
+            "yIntercept": 0
+          },
+          "changes": []
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-05T02:55:19.492Z",
+      "lastActiveAt": "2026-10-05T02:55:19.492Z"
+    },
+    "ses-function-explorer-1791168919569": {
+      "id": "ses-function-explorer-1791168919569",
+      "templateSlug": "function-explorer",
+      "currentState": {
+        "parameters": {
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "xMin": -10,
+          "xMax": 10,
+          "actualValue": 0
+        },
+        "computed": {}
+      },
+      "history": [
+        {
+          "timestamp": 1791168919573,
+          "parameterChanges": [
+            {
+              "parameter": "experiment_status",
+              "from": 0,
+              "to": 1
+            }
+          ],
+          "outputs": {}
+        }
+      ],
+      "chatMessages": [],
+      "startedAt": "2026-10-05T02:55:19.569Z",
+      "lastActiveAt": "2026-10-05T02:55:19.573Z"
+    },
+    "test-sess-student1-1791528475841": {
+      "id": "test-sess-student1-1791528475841",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-09T06:47:55.896Z",
+      "lastActiveAt": "2026-10-09T06:47:55.899Z",
+      "userId": "usr-student-01"
+    },
+    "sess-victim-1791528475973": {
+      "id": "sess-victim-1791528475973",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-09T06:47:55.973Z",
+      "lastActiveAt": "2026-10-09T06:47:55.973Z",
+      "userId": "usr-student-other-p3"
+    },
+    "test-sess-student1-1791529220229": {
+      "id": "test-sess-student1-1791529220229",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-09T07:00:20.272Z",
+      "lastActiveAt": "2026-10-09T07:00:20.274Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791529578567": {
+      "id": "test-sess-student1-1791529578567",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-09T07:06:18.612Z",
+      "lastActiveAt": "2026-10-09T07:06:18.613Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791530167350": {
+      "id": "test-sess-student1-1791530167350",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-09T07:16:07.410Z",
+      "lastActiveAt": "2026-10-09T07:16:07.412Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791531728751": {
+      "id": "test-sess-student1-1791531728751",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-09T07:42:13.636Z",
+      "lastActiveAt": "2026-10-09T07:42:13.639Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791533985683": {
+      "id": "test-sess-student1-1791533985683",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-09T08:19:50.558Z",
+      "lastActiveAt": "2026-10-09T08:19:50.560Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791535002540": {
+      "id": "test-sess-student1-1791535002540",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-09T08:36:47.499Z",
+      "lastActiveAt": "2026-10-09T08:36:47.504Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791628902503": {
+      "id": "test-sess-student1-1791628902503",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-10T10:41:47.382Z",
+      "lastActiveAt": "2026-10-10T10:41:47.384Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791628957507": {
+      "id": "test-sess-student1-1791628957507",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-10T10:42:38.631Z",
+      "lastActiveAt": "2026-10-10T10:42:38.633Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791628970807": {
+      "id": "test-sess-student1-1791628970807",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-10T10:42:51.734Z",
+      "lastActiveAt": "2026-10-10T10:42:51.736Z",
+      "userId": "1"
+    },
+    "sess-victim-1791645581481": {
+      "id": "sess-victim-1791645581481",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-10T15:19:41.481Z",
+      "lastActiveAt": "2026-10-10T15:19:41.481Z",
+      "userId": "usr-student-other-p3"
+    },
+    "test-sess-student1-1791679815700": {
+      "id": "test-sess-student1-1791679815700",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T00:50:18.335Z",
+      "lastActiveAt": "2026-10-11T00:50:18.337Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791679827753": {
+      "id": "test-sess-student1-1791679827753",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T00:50:28.855Z",
+      "lastActiveAt": "2026-10-11T00:50:28.857Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791679914423": {
+      "id": "test-sess-student1-1791679914423",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T00:51:55.371Z",
+      "lastActiveAt": "2026-10-11T00:51:55.372Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791680010839": {
+      "id": "test-sess-student1-1791680010839",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T00:53:31.740Z",
+      "lastActiveAt": "2026-10-11T00:53:31.742Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791680020231": {
+      "id": "test-sess-student1-1791680020231",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T00:53:41.361Z",
+      "lastActiveAt": "2026-10-11T00:53:41.362Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791681340692": {
+      "id": "test-sess-student1-1791681340692",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T01:15:45.896Z",
+      "lastActiveAt": "2026-10-11T01:15:45.919Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791682738864": {
+      "id": "test-sess-student1-1791682738864",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T01:39:00.045Z",
+      "lastActiveAt": "2026-10-11T01:39:00.047Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791683957787": {
+      "id": "test-sess-student1-1791683957787",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T01:59:18.851Z",
+      "lastActiveAt": "2026-10-11T01:59:18.852Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791684576896": {
+      "id": "test-sess-student1-1791684576896",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T02:09:37.954Z",
+      "lastActiveAt": "2026-10-11T02:09:37.955Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791719343437": {
+      "id": "test-sess-student1-1791719343437",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T11:49:06.539Z",
+      "lastActiveAt": "2026-10-11T11:49:06.541Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791719755726": {
+      "id": "test-sess-student1-1791719755726",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T11:55:56.675Z",
+      "lastActiveAt": "2026-10-11T11:55:56.677Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791719764779": {
+      "id": "test-sess-student1-1791719764779",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T11:56:05.767Z",
+      "lastActiveAt": "2026-10-11T11:56:05.769Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791719842594": {
+      "id": "test-sess-student1-1791719842594",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T11:57:23.565Z",
+      "lastActiveAt": "2026-10-11T11:57:23.566Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791719865824": {
+      "id": "test-sess-student1-1791719865824",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T11:57:46.821Z",
+      "lastActiveAt": "2026-10-11T11:57:46.823Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791720548826": {
+      "id": "test-sess-student1-1791720548826",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T12:09:09.858Z",
+      "lastActiveAt": "2026-10-11T12:09:09.860Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791721398684": {
+      "id": "test-sess-student1-1791721398684",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T12:23:19.763Z",
+      "lastActiveAt": "2026-10-11T12:23:19.764Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791721629405": {
+      "id": "test-sess-student1-1791721629405",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T12:27:10.300Z",
+      "lastActiveAt": "2026-10-11T12:27:10.302Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791722644604": {
+      "id": "test-sess-student1-1791722644604",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T12:44:05.492Z",
+      "lastActiveAt": "2026-10-11T12:44:05.493Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791724528209": {
+      "id": "test-sess-student1-1791724528209",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T13:15:31.502Z",
+      "lastActiveAt": "2026-10-11T13:15:31.507Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791724890430": {
+      "id": "test-sess-student1-1791724890430",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T13:21:34.381Z",
+      "lastActiveAt": "2026-10-11T13:21:34.386Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791724989973": {
+      "id": "test-sess-student1-1791724989973",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T13:23:13.155Z",
+      "lastActiveAt": "2026-10-11T13:23:13.160Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791725013301": {
+      "id": "test-sess-student1-1791725013301",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T13:23:37.600Z",
+      "lastActiveAt": "2026-10-11T13:23:37.606Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791725099151": {
+      "id": "test-sess-student1-1791725099151",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T13:25:02.309Z",
+      "lastActiveAt": "2026-10-11T13:25:02.314Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791725292048": {
+      "id": "test-sess-student1-1791725292048",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T13:28:16.095Z",
+      "lastActiveAt": "2026-10-11T13:28:16.100Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791726614426": {
+      "id": "test-sess-student1-1791726614426",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T13:50:15.564Z",
+      "lastActiveAt": "2026-10-11T13:50:15.566Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791726743903": {
+      "id": "test-sess-student1-1791726743903",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T13:52:24.961Z",
+      "lastActiveAt": "2026-10-11T13:52:24.962Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791726783437": {
+      "id": "test-sess-student1-1791726783437",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T13:53:04.427Z",
+      "lastActiveAt": "2026-10-11T13:53:04.429Z",
+      "userId": "1"
+    },
+    "sess-victim-1791726796411": {
+      "id": "sess-victim-1791726796411",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T13:53:16.411Z",
+      "lastActiveAt": "2026-10-11T13:53:16.411Z",
+      "userId": "usr-student-other-p3"
+    },
+    "test-sess-student1-1791726813811": {
+      "id": "test-sess-student1-1791726813811",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T13:53:34.777Z",
+      "lastActiveAt": "2026-10-11T13:53:34.780Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791726837951": {
+      "id": "test-sess-student1-1791726837951",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T13:53:58.953Z",
+      "lastActiveAt": "2026-10-11T13:53:58.955Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791726848670": {
+      "id": "test-sess-student1-1791726848670",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T13:54:09.906Z",
+      "lastActiveAt": "2026-10-11T13:54:09.908Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791726857746": {
+      "id": "test-sess-student1-1791726857746",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T13:54:18.793Z",
+      "lastActiveAt": "2026-10-11T13:54:18.795Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791726929028": {
+      "id": "test-sess-student1-1791726929028",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T13:55:30.055Z",
+      "lastActiveAt": "2026-10-11T13:55:30.057Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791727992618": {
+      "id": "test-sess-student1-1791727992618",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T14:13:17.804Z",
+      "lastActiveAt": "2026-10-11T14:13:17.824Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791728362090": {
+      "id": "test-sess-student1-1791728362090",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T14:19:26.199Z",
+      "lastActiveAt": "2026-10-11T14:19:26.205Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791728514860": {
+      "id": "test-sess-student1-1791728514860",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T14:21:59.172Z",
+      "lastActiveAt": "2026-10-11T14:21:59.177Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791728923043": {
+      "id": "test-sess-student1-1791728923043",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T14:28:46.730Z",
+      "lastActiveAt": "2026-10-11T14:28:46.736Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791730583854": {
+      "id": "test-sess-student1-1791730583854",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-11T14:56:27.895Z",
+      "lastActiveAt": "2026-10-11T14:56:27.902Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791804700019": {
+      "id": "test-sess-student1-1791804700019",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-12T11:31:42.884Z",
+      "lastActiveAt": "2026-10-12T11:31:42.886Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791806190174": {
+      "id": "test-sess-student1-1791806190174",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-12T11:56:31.175Z",
+      "lastActiveAt": "2026-10-12T11:56:31.176Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791815062473": {
+      "id": "test-sess-student1-1791815062473",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-12T14:24:22.524Z",
+      "lastActiveAt": "2026-10-12T14:24:22.527Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791815818890": {
+      "id": "test-sess-student1-1791815818890",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-12T14:36:59.903Z",
+      "lastActiveAt": "2026-10-12T14:36:59.904Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791893711110": {
+      "id": "test-sess-student1-1791893711110",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T12:15:14.808Z",
+      "lastActiveAt": "2026-10-13T12:15:14.810Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791895100246": {
+      "id": "test-sess-student1-1791895100246",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T12:38:25.214Z",
+      "lastActiveAt": "2026-10-13T12:38:25.221Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791896626631": {
+      "id": "test-sess-student1-1791896626631",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T13:03:48.365Z",
+      "lastActiveAt": "2026-10-13T13:03:48.367Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791897137441": {
+      "id": "test-sess-student1-1791897137441",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T13:12:18.313Z",
+      "lastActiveAt": "2026-10-13T13:12:18.315Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791897736926": {
+      "id": "test-sess-student1-1791897736926",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T13:22:19.092Z",
+      "lastActiveAt": "2026-10-13T13:22:19.094Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791898043588": {
+      "id": "test-sess-student1-1791898043588",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T13:27:24.992Z",
+      "lastActiveAt": "2026-10-13T13:27:24.995Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791898487418": {
+      "id": "test-sess-student1-1791898487418",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T13:34:48.989Z",
+      "lastActiveAt": "2026-10-13T13:34:48.991Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791899536736": {
+      "id": "test-sess-student1-1791899536736",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T13:52:17.801Z",
+      "lastActiveAt": "2026-10-13T13:52:17.803Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791900159332": {
+      "id": "test-sess-student1-1791900159332",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T14:02:43.766Z",
+      "lastActiveAt": "2026-10-13T14:02:43.792Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791900725324": {
+      "id": "test-sess-student1-1791900725324",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T14:12:09.457Z",
+      "lastActiveAt": "2026-10-13T14:12:09.466Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791901386355": {
+      "id": "test-sess-student1-1791901386355",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T14:23:09.855Z",
+      "lastActiveAt": "2026-10-13T14:23:09.862Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791902137387": {
+      "id": "test-sess-student1-1791902137387",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T14:35:38.369Z",
+      "lastActiveAt": "2026-10-13T14:35:38.371Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791902398638": {
+      "id": "test-sess-student1-1791902398638",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T14:39:59.572Z",
+      "lastActiveAt": "2026-10-13T14:39:59.574Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791902952446": {
+      "id": "test-sess-student1-1791902952446",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T14:49:13.492Z",
+      "lastActiveAt": "2026-10-13T14:49:13.494Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791903211859": {
+      "id": "test-sess-student1-1791903211859",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T14:53:32.933Z",
+      "lastActiveAt": "2026-10-13T14:53:32.936Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791904624853": {
+      "id": "test-sess-student1-1791904624853",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T15:17:05.790Z",
+      "lastActiveAt": "2026-10-13T15:17:05.792Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791904872245": {
+      "id": "test-sess-student1-1791904872245",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T15:21:13.240Z",
+      "lastActiveAt": "2026-10-13T15:21:13.241Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791905233896": {
+      "id": "test-sess-student1-1791905233896",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T15:27:14.827Z",
+      "lastActiveAt": "2026-10-13T15:27:14.829Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791906198284": {
+      "id": "test-sess-student1-1791906198284",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T15:43:19.341Z",
+      "lastActiveAt": "2026-10-13T15:43:19.343Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791935885412": {
+      "id": "test-sess-student1-1791935885412",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-13T23:58:10.294Z",
+      "lastActiveAt": "2026-10-13T23:58:10.296Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791936554619": {
+      "id": "test-sess-student1-1791936554619",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T00:09:15.902Z",
+      "lastActiveAt": "2026-10-14T00:09:15.904Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791936650505": {
+      "id": "test-sess-student1-1791936650505",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T00:10:51.840Z",
+      "lastActiveAt": "2026-10-14T00:10:51.843Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791937771447": {
+      "id": "test-sess-student1-1791937771447",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T00:29:32.488Z",
+      "lastActiveAt": "2026-10-14T00:29:32.490Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791938525862": {
+      "id": "test-sess-student1-1791938525862",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T00:42:10.722Z",
+      "lastActiveAt": "2026-10-14T00:42:10.731Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791939537497": {
+      "id": "test-sess-student1-1791939537497",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T00:58:58.557Z",
+      "lastActiveAt": "2026-10-14T00:58:58.559Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791939903163": {
+      "id": "test-sess-student1-1791939903163",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T01:05:04.245Z",
+      "lastActiveAt": "2026-10-14T01:05:04.247Z",
+      "userId": "1"
+    },
+    "sess-victim-1791952508139": {
+      "id": "sess-victim-1791952508139",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T04:35:08.139Z",
+      "lastActiveAt": "2026-10-14T04:35:08.139Z",
+      "userId": "usr-student-other-p3"
+    },
+    "sess-victim-1791952672043": {
+      "id": "sess-victim-1791952672043",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T04:37:52.043Z",
+      "lastActiveAt": "2026-10-14T04:37:52.043Z",
+      "userId": "usr-student-other-p3"
+    },
+    "test-sess-student1-1791975030026": {
+      "id": "test-sess-student1-1791975030026",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T10:50:31.054Z",
+      "lastActiveAt": "2026-10-14T10:50:31.056Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791976359629": {
+      "id": "test-sess-student1-1791976359629",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T11:12:43.990Z",
+      "lastActiveAt": "2026-10-14T11:12:43.997Z",
+      "userId": "usr-student-01"
+    },
+    "sess-victim-1791986261296": {
+      "id": "sess-victim-1791986261296",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T13:57:41.296Z",
+      "lastActiveAt": "2026-10-14T13:57:41.296Z",
+      "userId": "usr-student-other-p3"
+    },
+    "test-sess-student1-1791986649699": {
+      "id": "test-sess-student1-1791986649699",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T14:04:09.757Z",
+      "lastActiveAt": "2026-10-14T14:04:09.759Z",
+      "userId": "usr-student-01"
+    },
+    "sess-victim-1791986649839": {
+      "id": "sess-victim-1791986649839",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T14:04:09.839Z",
+      "lastActiveAt": "2026-10-14T14:04:09.839Z",
+      "userId": "usr-student-other-p3"
+    },
+    "test-sess-student1-1791988261838": {
+      "id": "test-sess-student1-1791988261838",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T14:31:01.890Z",
+      "lastActiveAt": "2026-10-14T14:31:01.892Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791988679465": {
+      "id": "test-sess-student1-1791988679465",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T14:38:04.350Z",
+      "lastActiveAt": "2026-10-14T14:38:04.352Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1791988905272": {
+      "id": "test-sess-student1-1791988905272",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T14:41:46.606Z",
+      "lastActiveAt": "2026-10-14T14:41:46.608Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791989343673": {
+      "id": "test-sess-student1-1791989343673",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T14:49:04.685Z",
+      "lastActiveAt": "2026-10-14T14:49:04.688Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791989585914": {
+      "id": "test-sess-student1-1791989585914",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T14:53:07.074Z",
+      "lastActiveAt": "2026-10-14T14:53:07.078Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1791989917546": {
+      "id": "test-sess-student1-1791989917546",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-14T14:58:38.594Z",
+      "lastActiveAt": "2026-10-14T14:58:38.596Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1792040341934": {
+      "id": "test-sess-student1-1792040341934",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T04:59:02.759Z",
+      "lastActiveAt": "2026-10-15T04:59:02.761Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1792040579266": {
+      "id": "test-sess-student1-1792040579266",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T05:03:00.268Z",
+      "lastActiveAt": "2026-10-15T05:03:00.271Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1792041415054": {
+      "id": "test-sess-student1-1792041415054",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T05:16:55.834Z",
+      "lastActiveAt": "2026-10-15T05:16:55.836Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1792041596651": {
+      "id": "test-sess-student1-1792041596651",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T05:19:58.065Z",
+      "lastActiveAt": "2026-10-15T05:19:58.068Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1792043601097": {
+      "id": "test-sess-student1-1792043601097",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T05:53:22.246Z",
+      "lastActiveAt": "2026-10-15T05:53:22.248Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1792044795744": {
+      "id": "test-sess-student1-1792044795744",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T06:13:20.059Z",
+      "lastActiveAt": "2026-10-15T06:13:20.066Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1792046833604": {
+      "id": "test-sess-student1-1792046833604",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T06:47:15.102Z",
+      "lastActiveAt": "2026-10-15T06:47:15.106Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1792047027530": {
+      "id": "test-sess-student1-1792047027530",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T06:50:28.576Z",
+      "lastActiveAt": "2026-10-15T06:50:28.581Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1792047772190": {
+      "id": "test-sess-student1-1792047772190",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T07:02:56.606Z",
+      "lastActiveAt": "2026-10-15T07:02:56.615Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1792048041011": {
+      "id": "test-sess-student1-1792048041011",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T07:07:24.247Z",
+      "lastActiveAt": "2026-10-15T07:07:24.254Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1792049423614": {
+      "id": "test-sess-student1-1792049423614",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T07:30:28.408Z",
+      "lastActiveAt": "2026-10-15T07:30:28.414Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1792050383990": {
+      "id": "test-sess-student1-1792050383990",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T07:46:25.040Z",
+      "lastActiveAt": "2026-10-15T07:46:25.042Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1792050394037": {
+      "id": "test-sess-student1-1792050394037",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T07:46:34.949Z",
+      "lastActiveAt": "2026-10-15T07:46:34.950Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1792050430600": {
+      "id": "test-sess-student1-1792050430600",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T07:47:11.620Z",
+      "lastActiveAt": "2026-10-15T07:47:11.622Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1792050700324": {
+      "id": "test-sess-student1-1792050700324",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T07:51:41.250Z",
+      "lastActiveAt": "2026-10-15T07:51:41.252Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1792051262656": {
+      "id": "test-sess-student1-1792051262656",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T08:01:03.473Z",
+      "lastActiveAt": "2026-10-15T08:01:03.475Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1792051491758": {
+      "id": "test-sess-student1-1792051491758",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T08:04:52.634Z",
+      "lastActiveAt": "2026-10-15T08:04:52.637Z",
+      "userId": "1"
+    },
+    "sess-victim-1792052389646": {
+      "id": "sess-victim-1792052389646",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T08:19:49.646Z",
+      "lastActiveAt": "2026-10-15T08:19:49.646Z"
+    },
+    "test-sess-student1-1792052390206": {
+      "id": "test-sess-student1-1792052390206",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T08:19:50.983Z",
+      "lastActiveAt": "2026-10-15T08:19:50.985Z",
+      "userId": "1"
+    },
+    "sess-victim-1792052398931": {
+      "id": "sess-victim-1792052398931",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T08:19:58.931Z",
+      "lastActiveAt": "2026-10-15T08:19:58.931Z",
+      "userId": "usr-student-other-p3"
+    },
+    "test-sess-student1-1792052399457": {
+      "id": "test-sess-student1-1792052399457",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T08:20:00.236Z",
+      "lastActiveAt": "2026-10-15T08:20:00.238Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1792052455943": {
+      "id": "test-sess-student1-1792052455943",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T08:20:56.720Z",
+      "lastActiveAt": "2026-10-15T08:20:56.722Z",
+      "userId": "1"
+    },
+    "test-sess-student1-1792067614201": {
+      "id": "test-sess-student1-1792067614201",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T12:33:39.278Z",
+      "lastActiveAt": "2026-10-15T12:33:39.284Z",
+      "userId": "usr-student-01"
+    },
+    "test-sess-student1-1792068124151": {
+      "id": "test-sess-student1-1792068124151",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T12:42:05.255Z",
+      "lastActiveAt": "2026-10-15T12:42:05.259Z",
+      "userId": "1"
+    },
+    "sess-victim-1792069157252": {
+      "id": "sess-victim-1792069157252",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T12:59:17.252Z",
+      "lastActiveAt": "2026-10-15T12:59:17.252Z",
+      "userId": "usr-student-other-p3"
+    },
+    "test-sess-student1-1792069157699": {
+      "id": "test-sess-student1-1792069157699",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T12:59:18.492Z",
+      "lastActiveAt": "2026-10-15T12:59:18.494Z",
+      "userId": "1"
+    },
+    "sess-victim-1792069327260": {
+      "id": "sess-victim-1792069327260",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T13:02:07.261Z",
+      "lastActiveAt": "2026-10-15T13:02:07.261Z",
+      "userId": "usr-student-other-p3"
+    },
+    "test-sess-student1-1792069327766": {
+      "id": "test-sess-student1-1792069327766",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T13:02:08.562Z",
+      "lastActiveAt": "2026-10-15T13:02:08.564Z",
+      "userId": "1"
+    },
+    "sess-victim-1792069987686": {
+      "id": "sess-victim-1792069987686",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T13:13:07.686Z",
+      "lastActiveAt": "2026-10-15T13:13:07.686Z",
+      "userId": "usr-student-other-p3"
+    },
+    "test-sess-student1-1792069988094": {
+      "id": "test-sess-student1-1792069988094",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T13:13:08.856Z",
+      "lastActiveAt": "2026-10-15T13:13:08.858Z",
+      "userId": "1"
+    },
+    "sess-victim-1792070527259": {
+      "id": "sess-victim-1792070527259",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T13:22:07.259Z",
+      "lastActiveAt": "2026-10-15T13:22:07.259Z",
+      "userId": "usr-student-other-p3"
+    },
+    "test-sess-student1-1792070527694": {
+      "id": "test-sess-student1-1792070527694",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T13:22:08.507Z",
+      "lastActiveAt": "2026-10-15T13:22:08.510Z",
+      "userId": "1"
+    },
+    "sess-victim-1792070901877": {
+      "id": "sess-victim-1792070901877",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T13:28:21.877Z",
+      "lastActiveAt": "2026-10-15T13:28:21.877Z",
+      "userId": "usr-student-other-p3"
+    },
+    "test-sess-student1-1792070902417": {
+      "id": "test-sess-student1-1792070902417",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T13:28:23.193Z",
+      "lastActiveAt": "2026-10-15T13:28:23.195Z",
+      "userId": "1"
+    },
+    "sess-victim-1792071625633": {
+      "id": "sess-victim-1792071625633",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T13:40:25.633Z",
+      "lastActiveAt": "2026-10-15T13:40:25.633Z",
+      "userId": "usr-student-other-p3"
+    },
+    "test-sess-student1-1792071626032": {
+      "id": "test-sess-student1-1792071626032",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T13:40:30.666Z",
+      "lastActiveAt": "2026-10-15T13:40:30.674Z",
+      "userId": "usr-student-01"
+    },
+    "sess-victim-1792071964005": {
+      "id": "sess-victim-1792071964005",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T13:46:04.005Z",
+      "lastActiveAt": "2026-10-15T13:46:04.005Z",
+      "userId": "usr-student-other-p3"
+    },
+    "test-sess-student1-1792071964404": {
+      "id": "test-sess-student1-1792071964404",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T13:46:09.349Z",
+      "lastActiveAt": "2026-10-15T13:46:09.356Z",
+      "userId": "usr-student-01"
+    },
+    "sess-victim-1792073382218": {
+      "id": "sess-victim-1792073382218",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T14:09:42.218Z",
+      "lastActiveAt": "2026-10-15T14:09:42.218Z",
+      "userId": "usr-student-other-p3"
+    },
+    "test-sess-student1-1792073382920": {
+      "id": "test-sess-student1-1792073382920",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T14:09:47.111Z",
+      "lastActiveAt": "2026-10-15T14:09:47.118Z",
+      "userId": "usr-student-01"
+    },
+    "sess-victim-1792074150679": {
+      "id": "sess-victim-1792074150679",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 5
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T14:22:30.679Z",
+      "lastActiveAt": "2026-10-15T14:22:30.679Z",
+      "userId": "usr-student-other-p3"
+    },
+    "test-sess-student1-1792074151239": {
+      "id": "test-sess-student1-1792074151239",
+      "templateSlug": "newtons-second-law",
+      "currentState": {
+        "parameters": {
+          "mass": 10,
+          "force": 50
+        },
+        "computed": {}
+      },
+      "history": [],
+      "chatMessages": [],
+      "startedAt": "2026-10-15T14:22:35.279Z",
+      "lastActiveAt": "2026-10-15T14:22:35.286Z",
+      "userId": "usr-student-01"
+    }
+  },
+  "users": {
+    "usr-student-01": {
+      "id": "usr-student-01",
+      "name": "Budi Santoso (Mahasiswa)",
+      "email": "mahasiswa@genlabs.app",
+      "role": "student",
+      "avatar": "M",
+      "createdAt": "2026-10-01T08:00:00.000Z",
+      "updatedAt": "2026-10-06T03:47:48.562Z",
+      "preferences": {
+        "theme": "system",
+        "language": "id"
+      }
+    },
+    "user@genlabs.app": {
+      "id": "usr-student-01",
+      "name": "Budi Santoso",
+      "email": "user@genlabs.app",
+      "role": "student",
+      "avatar": "B",
+      "createdAt": "2026-10-01T08:00:00.000Z",
+      "updatedAt": "2026-10-01T08:00:00.000Z",
+      "preferences": {
+        "theme": "system",
+        "language": "id"
+      }
+    },
+    "mahasiswa@genlabs.app": {
+      "id": "usr-student-01",
+      "name": "Budi Santoso (Mahasiswa)",
+      "email": "mahasiswa@genlabs.app",
+      "role": "student",
+      "avatar": "M",
+      "createdAt": "2026-10-01T08:00:00.000Z",
+      "updatedAt": "2026-10-06T03:47:48.562Z",
+      "preferences": {
+        "theme": "system",
+        "language": "id"
+      }
+    },
+    "mahasiswa@genlabs.id": {
+      "id": "usr-student-01",
+      "name": "Budi Santoso",
+      "email": "user@genlabs.app",
+      "role": "student",
+      "avatar": "B",
+      "createdAt": "2026-10-01T08:00:00.000Z",
+      "updatedAt": "2026-10-01T08:00:00.000Z",
+      "preferences": {
+        "theme": "system",
+        "language": "id"
+      }
+    },
+    "mahasiswa@simula.ac.id": {
+      "id": "usr-student-01",
+      "name": "Budi Santoso (Mahasiswa)",
+      "email": "mahasiswa@simula.ac.id",
+      "role": "student",
+      "avatar": "M",
+      "createdAt": "2026-10-01T08:00:00.000Z",
+      "updatedAt": "2026-10-01T08:00:00.000Z",
+      "preferences": {
+        "theme": "system",
+        "language": "id"
+      }
+    },
+    "usr-admin-01": {
+      "id": "usr-admin-01",
+      "name": "Dr. Hendra Wijaya (Admin Lab)",
+      "email": "admin@genlabs.app",
+      "role": "admin",
+      "avatar": "A",
+      "createdAt": "2026-10-01T08:00:00.000Z",
+      "updatedAt": "2026-10-06T03:47:43.326Z",
+      "preferences": {
+        "theme": "dark",
+        "language": "id"
+      }
+    },
+    "admin@genlabs.app": {
+      "id": "usr-admin-01",
+      "name": "Dr. Hendra Wijaya (Admin Lab)",
+      "email": "admin@genlabs.app",
+      "role": "admin",
+      "avatar": "A",
+      "createdAt": "2026-10-01T08:00:00.000Z",
+      "updatedAt": "2026-10-06T03:47:43.326Z",
+      "preferences": {
+        "theme": "dark",
+        "language": "id"
+      }
+    },
+    "admin@genlabs.id": {
+      "id": "usr-admin-01",
+      "name": "Dr. Hendra Wijaya (Admin Lab)",
+      "email": "admin@genlabs.app",
+      "role": "admin",
+      "avatar": "A",
+      "createdAt": "2026-10-01T08:00:00.000Z",
+      "updatedAt": "2026-10-01T08:00:00.000Z",
+      "preferences": {
+        "theme": "dark",
+        "language": "id"
+      }
+    },
+    "admin@simula.ac.id": {
+      "id": "usr-admin-01",
+      "name": "Dr. Hendra Wijaya (Admin Lab)",
+      "email": "admin@simula.ac.id",
+      "role": "admin",
+      "avatar": "A",
+      "createdAt": "2026-10-01T08:00:00.000Z",
+      "updatedAt": "2026-10-01T08:00:00.000Z",
+      "preferences": {
+        "theme": "dark",
+        "language": "id"
+      }
+    },
+    "usr-student-99": {
+      "id": "usr-student-99",
+      "name": "Attacker Student",
+      "email": "attacker@student.edu",
+      "role": "student",
+      "createdAt": "2026-10-15T14:22:35.295Z",
+      "updatedAt": "2026-10-15T14:22:35.295Z"
+    },
+    "attacker@student.edu": {
+      "id": "usr-student-99",
+      "name": "Attacker Student",
+      "email": "attacker@student.edu",
+      "role": "student",
+      "createdAt": "2026-10-15T14:22:35.295Z",
+      "updatedAt": "2026-10-15T14:22:35.295Z"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Technical Background Gradient -->
+    <radialGradient id="og-glow" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#1D4838" stop-opacity="0.35"/>
+      <stop offset="70%" stop-color="#0E1410" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#080C09" stop-opacity="1"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1C281F" stroke-width="1" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="630" fill="#0E1410"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#og-glow)"/>
+
+  <!-- Technical Telemetry Corner Calipers -->
+  <path d="M 40 70 V 40 H 70" fill="none" stroke="#4B8F8C" stroke-width="2"/>
+  <path d="M 1160 70 V 40 H 1130" fill="none" stroke="#4B8F8C" stroke-width="2"/>
+  <path d="M 40 560 V 590 H 70" fill="none" stroke="#4B8F8C" stroke-width="2"/>
+  <path d="M 1160 560 V 590 H 1130" fill="none" stroke="#4B8F8C" stroke-width="2"/>
+
+  <!-- Top Metadata Bar -->
+  <text x="70" y="55" font-family="'Space Mono', monospace" font-size="12" font-weight="700" letter-spacing="3" fill="#8ED3CF">INSTRUMENT BENCH · SIMULATION ENGINE V2.4</text>
+  <text x="1130" y="55" text-anchor="end" font-family="'Space Mono', monospace" font-size="12" font-weight="700" letter-spacing="3" fill="#BA8230">CALIBRATED // SECURE</text>
+
+  <!-- Main Center Brand Group -->
+  <g transform="translate(140, 180)">
+    <!-- Crucible Nexus Symbol Large (180x180) -->
+    <g transform="translate(0, 0) scale(0.85)">
+      <polygon points="128,36 204,80 152,110 128,96 104,110 52,80" fill="#F4F6F4"/>
+      <polygon points="207.69,174 131.69,218 131.69,158 152.48,146 152.48,118 207.69,126" fill="#F4F6F4"/>
+      <polygon points="48.31,174 48.31,86 103.52,118 103.52,146 124.31,158 124.31,218" fill="#F4F6F4"/>
+      <!-- Phosphor Center Core -->
+      <circle cx="128" cy="128" r="12" fill="#4B8F8C"/>
+      <!-- Core Halo -->
+      <circle cx="128" cy="128" r="18" fill="none" stroke="#8ED3CF" stroke-width="1.5" stroke-opacity="0.6"/>
+    </g>
+
+    <!-- Wordmark -->
+    <text x="250" y="110" font-family="'Sora', -apple-system, BlinkMacSystemFont, sans-serif" font-size="104" font-weight="800" letter-spacing="-2" fill="#FFFFFF">GEN<tspan fill="#4B8F8C">·</tspan>LABS</text>
+    
+    <!-- Subtitle -->
+    <text x="255" y="160" font-family="'Space Mono', monospace" font-size="20" font-weight="700" letter-spacing="5" fill="#8ED3CF">UNIVERSAL INTERACTIVE SIMULATION PLATFORM</text>
+  </g>
+
+  <!-- Bottom Badges / Value Props -->
+  <g transform="translate(140, 480)">
+    <!-- Badge 1 -->
+    <rect x="0" y="0" width="270" height="42" rx="6" fill="#152119" stroke="#25382B" stroke-width="1"/>
+    <text x="135" y="26" text-anchor="middle" font-family="'Space Mono', monospace" font-size="12" font-weight="700" letter-spacing="1.5" fill="#D3DED6">⚡ PHYSICS &amp; ELECTRONICS</text>
+
+    <!-- Badge 2 -->
+    <rect x="290" y="0" width="280" height="42" rx="6" fill="#152119" stroke="#25382B" stroke-width="1"/>
+    <text x="430" y="26" text-anchor="middle" font-family="'Space Mono', monospace" font-size="12" font-weight="700" letter-spacing="1.5" fill="#D3DED6">🧪 CHEMISTRY &amp; REACTIONS</text>
+
+    <!-- Badge 3 -->
+    <rect x="590" y="0" width="310" height="42" rx="6" fill="#152119" stroke="#25382B" stroke-width="1"/>
+    <text x="745" y="26" text-anchor="middle" font-family="'Space Mono', monospace" font-size="12" font-weight="700" letter-spacing="1.5" fill="#D3DED6">🧠 AI EXPERIMENTAL TUTOR</text>
+  </g>
+
+  <!-- Bottom Coordinate Telemetry Footer -->
+  <text x="70" y="590" font-family="'Space Mono', monospace" font-size="11" font-weight="400" letter-spacing="2" fill="#5A6658">COORDINATE AXES: [X: PRED · Y: SIM · Z: OBS] · HTTP://GENLABS.LOCAL</text>
+  <text x="1130" y="590" text-anchor="end" font-family="'Space Mono', monospace" font-size="11" font-weight="700" letter-spacing="2" fill="#5A6658">EMPIRICAL SIMULATION SUITE</text>
+</svg>

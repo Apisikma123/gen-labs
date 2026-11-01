@@ -1,0 +1,28 @@
+# GEN LABS Uploads Directory Protection
+# Strictly prevent execution of server-side scripts in user upload folders
+Options -Indexes -ExecCGI
+
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+
+<IfModule mod_php7.c>
+    php_flag engine off
+</IfModule>
+
+<IfModule mod_php8.c>
+    php_flag engine off
+</IfModule>
+
+RemoveHandler .php .phtml .php3 .php4 .php5 .php7 .php8 .phps .cgi .pl .asp .aspx .exe .sh .bash
+RemoveType .php .phtml .php3 .php4 .php5 .php7 .php8 .phps .cgi .pl .asp .aspx .exe .sh .bash
+
+<FilesMatch "(?i)\.(php|phtml|php3|php4|php5|php7|php8|phps|pl|py|cgi|asp|aspx|sh|bash|cmd|bat|exe)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>

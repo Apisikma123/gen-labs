@@ -1,0 +1,29 @@
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="r-bell-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="65%" stop-color="#000000" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="r-bell-body" cx="36%" cy="30%" r="72%">
+      <stop offset="0%" stop-color="#FFF2D6"/>
+      <stop offset="25%" stop-color="#FBBA63"/>
+      <stop offset="65%" stop-color="#BA8230"/>
+      <stop offset="90%" stop-color="#6B4100"/>
+      <stop offset="100%" stop-color="#382000"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="64" cy="116" rx="40" ry="9" fill="url(#r-bell-shadow)"/>
+  <!-- Bell Top Crown Knob -->
+  <circle cx="64" cy="18" r="7" fill="#BA8230" stroke="#FFF2D6" stroke-width="1.5"/>
+  <!-- Flared Bell Dome Body -->
+  <path d="M64 22C46 22 36 40 34 68C32 82 22 92 20 96C20 99 23 102 28 102H100C105 102 108 99 108 96C106 92 96 82 94 68C92 40 82 22 64 22Z" fill="url(#r-bell-body)"/>
+  <!-- Flared Base Rim Lip -->
+  <ellipse cx="64" cy="98" rx="42" ry="7" fill="#462B00"/>
+  <ellipse cx="64" cy="98" rx="40" ry="5.5" fill="#BA8230"/>
+  <!-- Interior Clapper Tongue -->
+  <circle cx="64" cy="100" r="8" fill="#FFF2D6" stroke="#462B00" stroke-width="2"/>
+  <!-- Specular Studio Stripe -->
+  <path d="M48 28C42 42 40 60 40 78" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.9"/>
+  <circle cx="58" cy="26" r="2.5" fill="#FFFFFF"/>
+</svg>
